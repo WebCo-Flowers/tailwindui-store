@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/fonts/LibreFranklin-SemiBold.woff2') format('woff2'),
+        url('/fonts/LibreFranklin-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/fonts/LibreFranklin-Regular.woff2') format('woff2'),
+        url('/fonts/LibreFranklin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --vine-lighter: #0E6338;
+    --foliage: #609C42;
+    --petal: #EE343F;
+    --sage: #D4E9C9;
+    --stone: #58585A;
+    --darker-foliage: #548C28;
+    --light-foliage: #EAFCE1;
+    --body-text: #343434;
+    --light-body-text: #616161;
+    --divider-outline: #CDCDCD;
+
+    // font family
+    --font-libre: 'Libre Franklin'
+}
+
+body {
+    font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.add-fix{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* **** toggler **** */
+.navbar-toggler {
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    outline: none;
+    .navbar-toggler-icon {
+        background-image: unset;
+        width: 32px;
+        height: 19px;
+        display: block;
+        background-image: none;
+        position: relative;
+        border-bottom: 3px solid #bebebe;
+        transition: all 300ms linear;
+        &:after,
+        &:before {
+            width: 32px;
+            position: absolute;
+            height: 3px;
+            background-color: #bebebe;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: 2;
+            transition: all 300ms linear;
+        }
+        &:after {
+            top: 8px;
+        }
+    }
+}
+.navbar-toggler.show {
+    .navbar-toggler-icon{
+        border-color: transparent;
+        &:after {
+            transform: rotate(45deg);
+        }
+        &:before {
+            transform: translateY(8px) rotate(-45deg);
+        }
+    }
+}
+header .navbar-nav.show{
+    display: block !important;
+}
+/* **** toggler **** */
