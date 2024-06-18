@@ -3,8 +3,22 @@
 @tailwind utilities;
 @font-face {
   font-family: "Libre Franklin";
+  src: url("/fonts/LibreFranklin-Bold.woff2") format("woff2"), url("/fonts/LibreFranklin-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
   src: url("/fonts/LibreFranklin-SemiBold.woff2") format("woff2"), url("/fonts/LibreFranklin-SemiBold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("/fonts/LibreFranklin-Medium.woff2") format("woff2"), url("/fonts/LibreFranklin-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -37,6 +51,45 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container-custom {
+  max-width: 1375px;
+  width: 1375px;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 1536px) {
+  .container-custom {
+    width: 1375px;
+    max-width: 1375px;
+  }
+}
+
+header .container-custom {
+  max-width: 1375px;
+  margin: 0 auto;
+}
+
+.small-container-custom {
+  max-width: 1223px;
+  margin: 0 auto;
+}
+
+.flowers-sec .container-custom {
+  max-width: 1262px;
+}
+
+.points-wrp .container-custom {
+  max-width: 1375px;
+}
+
+footer .container-custom {
+  max-width: 1375px;
 }
 
 /* **** toggler **** */
@@ -91,4 +144,66 @@ header .navbar-nav.show {
   display: block !important;
 }
 
-/* **** toggler **** *//*# sourceMappingURL=index.css.map */
+/* **** toggler **** */
+/* **** Slider Arrow **** */
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider .slick-prev,
+.hero-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 35px;
+  color: #fff;
+  transform: translate(0, -50%);
+  z-index: 9;
+}
+
+.hero-slider .slick-next {
+  left: auto;
+  right: 20px;
+}
+
+.products-slider {
+  position: relative;
+}
+
+.products-slider .slick-prev,
+.products-slider .slick-next {
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  font-size: 30px;
+  color: var(--foliage);
+  transform: translate(0, -50%);
+  z-index: 9;
+}
+
+.products-slider .slick-next {
+  left: auto;
+  right: -24px;
+}
+
+.slider-nav .slick-slide {
+  margin: 0 30px 0 0;
+}
+
+.slider-nav .slider-box {
+  border: 1px solid transparent;
+}
+
+.slider-nav .slick-current .slider-box {
+  border-color: var(--foliage);
+}
+
+/* **** End Slider Arrow **** */
+.select-size label {
+  border: 1px solid transparent;
+  display: block;
+}
+
+.select-size input:checked + label {
+  border-color: var(--foliage);
+}/*# sourceMappingURL=index.css.map */

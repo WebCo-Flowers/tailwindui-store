@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Forest of Flowers</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
 
         <!-- Scripts -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -11,16 +12,14 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="./css/slick.css" />
         <link rel="stylesheet" href="./css/index.css" />
-
-        
     </head>
     <body>
-
         <!-- Header -->
-        <header class="relative">
+        <header class="relative z-50 pb-2 border-b-2 border-divider-outline">
             <div class="bg-darker-foliage py-3.5 text-center">
-                <h3 class="text-base xl:text-[20px] text-white">SAME DAY DELIVERY ends in <span class="font-semibold">21h 56m 58s</span></h3>
+                <h3 class="text-base xl:text-[20px] text-white">SAME DAY DELIVERY ends in <span class="font-bold">21h 56m 58s</span></h3>
             </div>
             <div class="bg-light-foliage py-2 hidden lg:block">
                 <ul class="flex items-center justify-center gap-8">
@@ -29,80 +28,104 @@
                     <li><a href="#" class="text-xs block text-body-text hover:text-petal">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="m:max-w-[540px] md:max-w-[740px] lg:max-w-[960px] xl:max-w-[1170px] xxl:max-w-[1376px] mx-auto p-4">
+            <!-- m:max-w-[540px] md:max-w-[740px] lg:max-w-[960px] xl:max-w-[1170px] xxl: -->
+            <div class="container-custom py-4">
                 <div class="flex items-center">
                     <div class="w-2/6">
-                        <button class="navbar-toggler table md:hidden" type="button">
+                        <button class="navbar-toggler table lg:hidden" type="button">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <p class="text-xs text-body-text hidden md:block">
+                        <p class="text-xs text-body-text hidden lg:block">
                             <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal">Kitchener</a>
                         </p>
                     </div>
                     <div class="w-2/6">
                         <a href="#" class="table mx-auto">
-                            <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto md:table" />
-                            <img src="images/mobile-logo.svg" alt="" class="max-w-full table md:hidden" />
+                            <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto lg:table" />
+                            <img src="images/mobile-logo.svg" alt="" class="max-w-full table lg:hidden" />
                         </a>
                     </div>
                     <div class="w-2/6">
-                        <div class="flex items-center justify-end gap-[15px] md:gap-[31px]">
-                            <a href="#" class="group text-xs flex gap-2 items-center text-body-text  hover:text-foliage">
-                                <span class="relative text-lg text-[#999999] group-hover:text-foliage "><i class="fas fa-user"></i></span>
-                                <span class="hidden md:block">Log in to My Account</span>
+                        <div class="flex items-center justify-end gap-[15px] lg:gap-[31px]">
+                            <a href="#" class="group text-xs flex gap-2 items-center text-body-text hover:text-foliage">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-user"></i></span>
+                                <span class="hidden lg:block">Log in to My Account</span>
                             </a>
-                            <a href="#" class="text-xs  gap-2 items-center text-body-text group hover:text-foliage hidden md:flex">
-                                <span class="relative text-lg text-[#999999] group-hover:text-foliage "><i class="fas fa-heart"></i></span>
-                                <span class="hidden md:block">Wishlist</span>
+                            <a href="#" class="text-xs gap-2 items-center text-body-text group hover:text-foliage hidden lg:flex">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-heart"></i></span>
+                                <span class="hidden lg:block">Wishlist</span>
                             </a>
-                            <a href="#" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
-                                <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
-                                    <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
-                                </span>
-                                <span class="hidden md:block">Cart</span>
-                            </a>
+                             <div class="relative group block border-b border-divider-outline py-4 lg:py-2 lg:border-none z-30">
+                                <a href="javascript:void(0;)" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
+                                    <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
+                                        <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
+                                    </span>
+                                    <span class="hidden lg:block">Cart</span>
+                                </a>
+                                <div class="absolute top-full bg-white right-0 w-full p-4 lg:min-w-[323px] border border-divider-outline hidden group-hover:block">
+                                    <ul class="space-y-2.5 mb-6">
+                                        <li><a href="#" class="flex items-center gap-3">
+                                            <div class="h-[70px] w-[70px] border border-divider-outline">
+                                                <img src="images/daily-deal-standard1.png" alt="" class="h-full w-full object-contain object-center">
+                                            </div>
+                                            <h4 class="text-xs text-body-text font-semibold">
+                                                Florist's Choice Daily Deal
+                                                <span class="font-normal block">
+                                                    Standard
+                                                </span>
+                                            </h4>
+                                        </a></li>
+                                    </ul>
+                                    <a href="#" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
+                                        Checkout
+                                    </a>
+                                    <a href="#" class="table mx-auto text-vine-lighter underline font-bold text-xs">
+                                        View Shopping Cart
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white py-5 px-4 h-[calc(100vh-123px)] overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto" >
-                <div class="block md:hidden relative ">
-                    <input type="text" placeholder="Find a Gift" class="border border-divider-outline w-full py-4 pl-2.5 pr-10 outline-none shadow-none text-xs text-light-body-text">
-                    <a href="#" class="text-body-text text-base absolute right-4 top-2/4 -translate-y-1/2 "><i class="far fa-search"></i></a>
+            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white py-5 px-4 pb-0 w-full h-[calc(100vh-123px)] overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto">
+                <div class="block lg:hidden relative">
+                    <input type="text" placeholder="Find a Gift" class="border border-divider-outline w-full py-4 pl-2.5 pr-10 outline-none shadow-none text-xs text-light-body-text" />
+                    <a href="#" class="text-body-text text-base absolute right-4 top-2/4 -translate-y-1/2"><i class="far fa-search"></i></a>
                 </div>
-                <p class="text-xs text-body-text ml-auto table md:hidden my-5">
+                <p class="text-xs text-body-text ml-auto table lg:hidden my-5">
                     <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal">Kitchener</a>
                 </p>
-                <ul class="block items-center justify-center gap-[39px] lg:flex">
+                <ul class="block items-center justify-center xl:gap-[39px] lg:flex lg:gap-5">
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Deal of the Day</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Deal of the Day</a>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Autumn</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Autumn</a>
                     </li>
-                    <li class="relative group block  border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage"> Occasions <i class="far fa-angle-down text-foliage"></i> </a>
-                        <div class="relative lg:absolute top-full bg-white left-0 w-full xl:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                    <li class="relative group block border-b border-divider-outline py-4 lg:py-2 lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold"> Occasions <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
                             <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
                                 <div class="w-full lg:w-[52%] px-4">
                                     <div class="flex item-start justify-between pt-7 pb-6 px-8">
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Love & Romance</a></li>
                                         </ul>
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Retirement</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -118,29 +141,29 @@
                             </div>
                         </div>
                     </li>
-                    <li class="relative group block  border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Flowers & Prants <i class="far fa-angle-down text-foliage"></i> </a>
-                        <div class="relative lg:absolute top-full bg-white left-0 w-full xl:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                    <li class="relative group block border-b border-divider-outline py-4 lg:py-2 lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Flowers & Prants <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
                             <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
                                 <div class="w-full lg:w-[52%] px-4">
                                     <div class="flex item-start justify-between pt-7 pb-6 px-8">
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Love & Romance</a></li>
                                         </ul>
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Retirement</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -156,29 +179,29 @@
                             </div>
                         </div>
                     </li>
-                    <li class="relative group block  border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Weddings & Events <i class="far fa-angle-down text-foliage"></i></a>
-                        <div class="relative lg:absolute top-full bg-white left-0 w-full xl:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                    <li class="relative group block border-b border-divider-outline py-4 lg:py-2 lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Weddings & Events <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
                             <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
                                 <div class="w-full lg:w-[52%] px-4">
                                     <div class="flex item-start justify-between pt-7 pb-6 px-8">
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Love & Romance</a></li>
                                         </ul>
                                         <ul class="space-y-2.5">
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Retirement</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -195,52 +218,424 @@
                         </div>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Add Ons</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Add Ons</a>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Subscription</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Subscription</a>
                     </li>
-                    <li class="relative group block  border-b border-divider-outline py-4 lg:py-2 lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Locations <i class="far fa-angle-down text-foliage"></i></a>
-                        <div class="relative lg:absolute top-full bg-white left-0 w-full p-4 xl:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
-                             <ul class="space-y-2.5">
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
-                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                    <li class="relative group block border-b border-divider-outline py-4 lg:py-2 lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Locations <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full p-4 lg:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <ul class="space-y-2.5">
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">All Occasions</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Mother’s Day</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Birthday</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Sympathy & Funeral</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Anniversary</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Thinking of You</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage hover:font-semibold">Love & Romance</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block     lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold"><i class="far fa-search"></i></a>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">About</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">About</a>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Petal Perks Rewards</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Petal Perks Rewards</a>
                     </li>
                     <li class="relative py-4 lg:py-2 block lg:hidden">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Contact Us</a>
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage hover:font-semibold">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </header>
         <!-- End Header -->
 
-        <!-- Content -->
-        <div class="py-12">
-
+        <!-- Main Content -->
+        <div class="hero-slider">
+            <div>
+                <div class="relative">
+                    <img src="images/hero-slider1@2x.jpg" alt="" class="w-full" />
+                    <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0">
+                        <div class="container-custom">
+                            <div class="bg-white p-8 table ml-auto w-[445px]">
+                                <h3 class="text-vine-lighter text-3xl mb-4 font-semibold">
+                                    Fresh Floral Arrangements
+                                </h3>
+                                <p class="text-body-text text-lg mb-4">
+                                    This is some placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-vine-lighter">
+                                    <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                    Buy Flowers for an Occasion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative">
+                    <img src="images/hero-slider2@2x.jpg" alt="" class="w-full" />
+                    <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0">
+                        <div class="container-custom">
+                            <div class="bg-white p-8 table ml-auto w-[445px]">
+                                <h3 class="text-vine-lighter text-3xl mb-4 font-semibold">
+                                    Local & Hand Delivered
+                                </h3>
+                                <p class="text-body-text text-lg mb-4">
+                                    This is some placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-darker-foliage">
+                                    <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                    Buy Flowers for an Occasion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative">
+                    <img src="images/hero-slider3@2x.jpg" alt="" class="w-full" />
+                    <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0">
+                        <div class="container-custom">
+                            <div class="bg-white p-8 table ml-auto w-[445px]">
+                                <h3 class="text-vine-lighter text-3xl mb-4 font-semibold">
+                                    Same Day Delivery
+                                </h3>
+                                <p class="text-body-text text-lg mb-4">
+                                    This is some placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-darker-foliage">
+                                    <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                    Buy Flowers for an Occasion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="relative">
+                    <img src="images/hero-slider4@2x.jpg" alt="" class="w-full" />
+                    <div class="absolute top-2/4 -translate-y-2/4 left-0 right-0">
+                        <div class="container-custom flex items-center justify-end">
+                            <img src="images/petal-perks-circle-logo.png" alt="" class="max-w-full relative -right-4" />
+                            <div class="bg-white p-8 table w-[445px]">
+                                <h3 class="text-vine-lighter text-3xl mb-4 font-semibold">
+                                    Petal Perks Rewards
+                                </h3>
+                                <p class="text-body-text text-lg mb-4">
+                                    This is some placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                                <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-darker-foliage">
+                                    <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                    Buy Flowers for an Occasion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Content -->
 
+        <div class="pt-[120px] pb-20 relative">
+            <img src="images/fresh-slider-bg.png" alt="" class="absolute top-0 left-0 w-full pointer-events-none">
+            <div class="container-custom">
+                <div class="relative text-center max-w-[904px] mx-auto mb-24">
+                    <h2 class="text-vine-lighter text-4xl mb-4 font-semibold">Field Fresh for Less</h2>
+                    <h5 class="text-stone text-xl mb-4">Whatever the Occasion</h5>
+                    <p class="text-stone text-base">
+                        Ready-to-go or custom floral designs to suit any occasion, including personal special occasions, corporate needs, funerals, and weddings. Our talented floral designers create stunning wedding packages, with free
+                        consultations and on-site quotes to meet your unique dreams.
+                    </p>
+                </div>
+
+                <div class="fresh-slider">
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[370px] flex items-end justify-center mb-6 relative">
+                                <img src="images/fresh-slider-img1.png" alt="" class="max-w-full opacity-1 group-hover:opacity-0 mx-auto" />
+                                <img src="images/fresh-slider-img1.gif" alt="" class="max-w-full absolute bottom-[2px] left-0 right-0 mx-auto opacity-0 group-hover:opacity-100" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Florist's Choice Daily Deal</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$49.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[370px] flex items-end justify-center mb-6 relative">
+                                <img src="images/fresh-slider-img2.png" alt="" class="max-w-full opacity-1 group-hover:opacity-0 mx-auto" />
+                                <img src="images/fresh-slider-img2.gif" alt="" class="max-w-full absolute bottom-[2px] left-0 right-0 mx-auto opacity-0 group-hover:opacity-100" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Artist's Inspiration</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$99.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[370px] flex items-end justify-center mb-6 relative">
+                                <img src="images/fresh-slider-img3.png" alt="" class="max-w-full opacity-1 group-hover:opacity-0 mx-auto" />
+                                <img src="images/fresh-slider-img3.gif" alt="" class="max-w-full absolute bottom-[2px] left-0 right-0 mx-auto opacity-0 group-hover:opacity-100" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Hand-Tied Subscription</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$74.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pb-[120px]">
+            <div class="container-custom">
+                <div class="relative text-center max-w-[904px] mx-auto mb-7">
+                    <h2 class="text-vine-lighter text-3xl font-semibold">Popular Products</h2>
+                </div>
+                <div class="products-slider">
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[300px] flex items-end justify-center mb-6 relative">
+                                <img src="images/product-img1.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">One Dozen Red Roses</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$69.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[300px] flex items-end justify-center mb-6 relative">
+                                <img src="images/product-img1.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Two Dozen Red Roses</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$119.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[300px] flex items-end justify-center mb-6 relative">
+                                <img src="images/product-img3.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Something Special - 18 Red...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$134.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[300px] flex items-end justify-center mb-6 relative">
+                                <img src="images/product-img4.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Dazzling Coloured Roses</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$119.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[300px] flex items-end justify-center mb-6 relative">
+                                <img src="images/product-img3.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Something Special - 18 Red...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$134.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light-foliage pt-[60px] pb-14">
+            <div class="small-container-custom">
+                <div class="relative text-center max-w-[904px] mx-auto mb-8">
+                    <h2 class="text-vine-lighter text-3xl font-semibold">Why Choose Forest of Flowers</h2>
+                </div>
+                <div class="flex items-start justify-between">
+                    <div>
+                        <img src="images/forest-img1.png" alt="" class="max-w-full mx-auto mb-8" />
+                        <h3 class="text-lg text-vine-lighter text-center font-medium">
+                            Same Day Delivery
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="images/forest-img2.png" alt="" class="max-w-full mx-auto mb-8" />
+                        <h3 class="text-lg text-vine-lighter text-center font-medium">
+                            Same Day Delivery
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="images/forest-img3.png" alt="" class="max-w-full mx-auto mb-8" />
+                        <h3 class="text-lg text-vine-lighter text-center font-medium">
+                            Same Day Delivery
+                        </h3>
+                    </div>
+                    <div>
+                        <img src="images/forest-img4.png" alt="" class="max-w-full mx-auto mb-8" />
+                        <h3 class="text-lg text-vine-lighter text-center font-medium">
+                            Same Day Delivery
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-[120px] pb-[107px] relative">
+            <img src="images/autumn-products-background.png" alt="" class="absolute left-0 bottom-0 w-full pointer-events-none">
+            <div class="container-custom">
+                <div class="relative text-center max-w-[904px] mx-auto mb-7">
+                    <h2 class="text-vine-lighter text-3xl font-semibold">Embrace the Autumn Season</h2>
+                </div>
+                <div class="products-slider">
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[270px] flex items-end justify-center mb-6 relative">
+                                <img src="images/season-img1.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Autumn Days Featuring...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$94.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[270px] flex items-end justify-center mb-6 relative">
+                                <img src="images/season-img1.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Bountiful Blooms of Orange...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$69.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[270px] flex items-end justify-center mb-6 relative">
+                                <img src="images/season-img3.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Orange Skies featuring...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$69.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[270px] flex items-end justify-center mb-6 relative">
+                                <img src="images/season-img4.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Field of Daisies featuring...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$59.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="relative table mx-auto group text-center">
+                            <div class="box-img mx-auto h-[270px] flex items-end justify-center mb-6 relative">
+                                <img src="images/season-img3.png" alt="" class="max-w-full mx-auto" />
+                            </div>
+                            <div>
+                                <h4 class="text-stone font-semibold text-xl mb-2.5 group-hover:text-foliage group-hover:underline">Orange Skies featuring...</h4>
+                                <h6 class="text-vine-lighter text-base font-semibold">$69.99</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light-foliage py-24 flowers-sec">
+            <div class="container-custom">
+                <div class="flex items-center -mx-6">
+                    <div class="w-[47%] px-6">
+                        <h3 class="text-[30px] text-vine-lighter mb-6 font-semibold">
+                            Guaranteed Fresh Flowers <br />
+                            lovingly hand-made by local florists
+                        </h3>
+                        <h5 class="text-xl text-stone mb-7">We have a flower shop near you!</h5>
+                        <p class="text-base text-body-text mb-7">
+                            This is some placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac euismod lectus, ac interdum diam. Mauris fringilla molestie elit eget egestas. Sed volutpat tellus ligula, ut
+                            aliquet leo aliquam vel. Pellentesque eget dui faucibus, ultrices justo ut, hendrerit risus.
+                        </p>
+                        <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-vine-lighter">
+                            <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                            About Our Locations
+                        </a>
+                    </div>
+                    <div class="w-[53%] px-6">
+                        <img src="images/florist-makingjpg.jpg" alt="" class="w-full" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative py-[30px] points-wrp">
+            <div class="container-custom">
+                <div class="flex -mx-4">
+                    <div class="w-6/12 px-4">
+                        <div class="bg-[url('images/reward-bg1.jpg')] bg-cover bg-center bg-no-repeat p-16 px-14">
+                            <div class="bg-white p-8 flex items-center justify-start gap-5 min-h-[260px]">
+                                <img src="images/petal-perks-circle-logo.png" alt="" class="max-w-[150px]" />
+                                <div>
+                                    <p class="text-lg text-body-text mb-7">Become a member to earn points and exclusive rewards every time you shop – it’s free to join.</p>
+                                    <div class="flex items-center gap-4">
+                                        <a href="#" class="flex items-center gap-1.5 bg-foliage w-fit text-white py-3 px-4 hover:bg-vine-lighter">
+                                            <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                            Join Now
+                                        </a>
+                                        <a href="#" class="flex items-center gap-1.5 bg-vine-lighter w-fit text-white py-3 px-4 hover:bg-foliage">
+                                            Why Join Petal Perks
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-4">
+                        <div class="bg-[url('images/reward-bg2.jpg')] bg-cover bg-center bg-no-repeat p-16 px-14">
+                            <div class="bg-white p-8 py-12 flex items-start justify-start gap-5 min-h-[260px]">
+                                <h2 class="text-vine-lighter text-3xl font-semibold">
+                                    Franchise <br />
+                                    Opportunities
+                                </h2>
+                                <div>
+                                    <p class="text-lg text-body-text mb-7">
+                                        Looking for a Fresh New Start? <br />
+                                        Discover the <b>Forest of Flowers® Difference!</b>
+                                    </p>
+                                    <a href="#" class="flex items-center gap-1.5 bg-foliage w-full justify-center text-white py-3 px-1 hover:bg-vine-lighter">
+                                        <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                                        Learn About Owning a Franchise
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
 
         <!-- Footer -->
         <footer class="bg-[#477722] py-[40px] sm:py-[60px]">
-            <div class="px-[60px] sm:p-0 sm:max-w-[540px] md:max-w-[740px] lg:max-w-[960px] xl:max-w-[1170px] xxl:max-w-[1376px] mx-auto">
+            <div class="container-custom">
                 <div class="flex justify-between flex-wrap">
                     <div class="w-full md:w-fit lg:mr-4">
                         <img src="images/footer-logo.svg" alt="" class="max-w-[200px] md:max-w-[150px] mb-[30px] lg:max-w-full md:mb-12" />
@@ -258,7 +653,7 @@
                         <h3 class="text-sm mb-3 text-white font-semibold uppercase lg:mb-4 md:text-xs xl:text-base">
                             LOCATIONS
                         </h3>
-                        <div class="flex gap-14 md:gap-5">
+                        <div class="flex gap-5 md:gap-14">
                             <div class="w-6/12">
                                 <ul class="space-y-1.5 md:space-y-2.5">
                                     <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Brantford</a></li>
@@ -331,8 +726,8 @@
         </footer>
         <!-- End Footer -->
 
-
         <script src="js/jquery.js"></script>
+        <script src="js/slick.js"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>
