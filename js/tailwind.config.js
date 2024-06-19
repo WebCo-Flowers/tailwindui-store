@@ -1,3 +1,4 @@
+
 tailwind.config = {
     theme: {
         fontFamily: {
@@ -14,7 +15,7 @@ tailwind.config = {
                 'light-foliage': 'var(--light-foliage)',
                 'body-text': 'var(--body-text)',
                 'light-body-text': 'var(--light-body-text)',
-                'divider-outline': 'var(--divider-outline)'
+                'divider-outline': 'var(--divider-outline)',
             }
         }
     }
