@@ -47,11 +47,6 @@
     --font-libre: "Libre Franklin";
 }
 
-@layer components {
-    .card {
-
-    }
-}
 
 body {
     font-family: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -87,7 +82,7 @@ body {
     }
     @media (max-width: 640px) {
         width: 100%;
-        max-width: 100%;
+        max-width: 540px;
         padding: 0 15px;
     }
 }
@@ -113,7 +108,7 @@ body {
     }
     @media (max-width: 640px) {
         width: 100%;
-        max-width: 100%;
+        max-width: 540px;
         padding: 0 15px;
     }
 }
@@ -141,7 +136,7 @@ body {
         }
         @media (max-width: 640px) {
             width: 100%;
-            max-width: 100%;
+            max-width: 540px;
             padding: 0 15px;
         }
     }
@@ -168,7 +163,7 @@ body {
         }
         @media (max-width: 640px) {
             width: 100%;
-            max-width: 100%;
+            max-width: 540px;
             padding: 0 15px;
         }
     }
@@ -176,6 +171,20 @@ body {
 
 /* **** toggler **** */
 header {
+    min-height: 278px;
+    @media (min-width: 1024px) and (max-width: 1279.98px) {
+        min-height: unset;
+    }
+    @media (min-width: 768px) and (max-width: 1023.98px) {
+        min-height: unset;
+    }
+    @media (min-width: 641px) and (max-width: 767.98px) {
+        min-height: unset;
+    }
+    @media (max-width: 640px) {
+        min-height: unset;
+        padding: 0;
+    }
     .navbar-toggler {
         background-color: transparent;
         border-radius: 0;
@@ -224,9 +233,22 @@ header {
             }
         }
     }
-
+    .navbar-nav{
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
     .navbar-nav.show {
         display: block !important;
+    }
+}
+header.sticky{
+    .navbar-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        border-bottom: 2px solid var(--divider-outline);
     }
 }
 /* **** toggler **** */
@@ -308,13 +330,14 @@ header {
     .slider-box {
         border: 1px solid transparent;
     }
-    .slick-curren {
+    .slick-current {
         .slider-box {
             border-color: var(--foliage);
         }
     }
 }
 /* **** End Slider Arrow **** */
+
 
 .select-size {
     label {
@@ -323,6 +346,12 @@ header {
     }
     input:checked + label {
         border-color: var(--foliage);
+    }
+}
+#tab-contents{
+     input:checked + label {
+        color: var(--darker-foliage);
+        border-color: var(--darker-foliage);
     }
 }
 
@@ -444,14 +473,12 @@ header {
     }
     &:hover {
         h4 {
-            // @apply underline text-foliage
             text-decoration: underline;
             color: var(--foliage);
         }
     }
 }
 /* **** End Product box **** */
-
 
 /* **** Buttons **** */
 .btn-primary{
@@ -491,3 +518,42 @@ header {
     }
 }
 /* **** End Buttons **** */
+
+
+/* **** Customer Review **** */
+.customer-review{
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+    padding: 30px;
+    p{
+        color: var(--body-text);
+        font-size: 16px;
+        margin: 0 0 24px;
+        a{
+            font-weight: bold;
+            color: var(--vine-lighter);
+            text-decoration: underline;
+            &:hover{
+                text-decoration: unset;
+            }
+        }
+    }
+    .user-info{
+        display: flex;
+        align-items: center;
+        gap: 17px;
+        img{
+            width: 46px;
+            height: 46px;
+            border-radius: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        h4{
+            color: var(--body-text);
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}
+/* **** End Customer Review **** */

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forest of Flowers</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
+        <!-- Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./js/tailwind.config.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="relative z-50 md:pb-1 border-b-2 border-divider-outline custom-button">
+            <div class="bg-darker-foliage py-3.5 text-center">
+                <h3 class="text-base xl:text-[20px] text-white">SAME DAY DELIVERY ends in <span class="font-bold">21h 56m 58s</span></h3>
+            </div>
+            <div class="bg-light-foliage py-2 hidden lg:block">
+                <ul class="flex items-center justify-center gap-8">
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">About</a></li>
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">Petal Perks Rewards</a></li>
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="container-custom py-4">
+                <div class="flex items-center">
+                    <div class="w-2/6">
+                        <button class="navbar-toggler table lg:hidden" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <p class="text-xs text-body-text hidden lg:block">
+                            <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal hover:no-underline">Kitchener</a>
+                        </p>
+                    </div>
+                    <div class="w-2/6">
+                        <a href="#" class="table mx-auto">
+                            <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto lg:table">
+                            <img src="images/mobile-logo.svg" alt="" class="max-w-full table lg:hidden">
+                        </a>
+                    </div>
+                    <div class="w-2/6">
+                        <div class="flex items-center justify-end gap-[15px] lg:gap-[20px] xl:gap-[31px]">
+                            <a href="#" class="group text-xs flex gap-2 items-center text-body-text hover:text-foliage">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-user"></i></span>
+                                <span class="hidden lg:block">Log in to My Account</span>
+                            </a>
+                            <a href="#" class="text-xs gap-2 items-center text-body-text group hover:text-foliage hidden lg:flex">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-heart"></i></span>
+                                <span class="hidden lg:block">Wishlist</span>
+                            </a>
+                             <div class="relative group block z-30">
+                                <a href="javascript:void(0;)" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
+                                    <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
+                                        <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
+                                    </span>
+                                    <span class="hidden lg:block">Cart</span>
+                                </a>
+
+                                <div class="absolute top-full bg-white right-0 w-full p-4 min-w-[323px] border border-divider-outline hidden group-hover:block">
+                                    <ul class="space-y-2.5 mb-6">
+                                        <li><a href="#" class="flex items-center gap-3">
+                                            <div class="h-[70px] w-[70px] border border-divider-outline">
+                                                <img src="images/daily-deal-standard1.png" alt="" class="h-full w-full object-contain object-center">
+                                            </div>
+                                            <h4 class="text-xs text-body-text font-semibold">
+                                                Florist's Choice Daily Deal
+                                                <span class="font-normal block">
+                                                    Standard
+                                                </span>
+                                            </h4>
+                                        </a></li>
+                                    </ul>
+                                    <a href="#" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
+                                        Checkout
+                                    </a>
+                                    <a href="#" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
+                                        View Shopping Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white py-5 px-4 pb-0 w-full h-[calc(100vh-123px)] overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto">
+                <div class="block lg:hidden relative">
+                    <input type="text" placeholder="Find a Gift" class="border border-divider-outline w-full py-4 pl-2.5 pr-10 outline-none shadow-none text-xs text-light-body-text">
+                    <a href="#" class="text-body-text text-base absolute right-4 top-2/4 -translate-y-1/2"><i class="far fa-search"></i></a>
+                </div>
+                <p class="text-xs text-body-text ml-auto table lg:hidden my-5">
+                    <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal">Kitchener</a>
+                </p>
+                <ul class="block items-center justify-center xl:gap-[39px] lg:flex lg:gap-5">
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center  gap-1 py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Deal of the Day</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Autumn</a>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out"> Occasions <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start pt-7 pb-6 px-7">
+                                        <ul class="space-y-2.5 w-[57%]">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5 w-[42%]">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Flowers & Prants <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start justify-between pt-7 pb-6 px-8">
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Weddings & Events <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start justify-between pt-7 pb-6 px-8">
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Add Ons</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Subscription</a>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Locations <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full p-4 lg:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <ul class="space-y-2.5">
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">About</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Petal Perks Rewards</a>
+                    </li>
+                    <li class="relative py-4 lg:py-2 block lg:hidden">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Breadcrumb -->
+        <div class="container-custom py-4 md:pt-[30px] md:pb-[18px]">
+            <ul class="flex items-center gap-[8px]">
+                <li><a href="#" class="text-vine-lighter text-xs font-semibold underline hover:no-underline">Shop</a></li>
+                <li class="text-body-text text-xs"><i class="far fa-angle-right"></i></li>
+                <li><a href="#" class="text-vine-lighter text-xs font-semibold underline hover:no-underline">Florist's Choice Daily Deal</a></li>
+            </ul>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <div class="relative pb-[60px]">
+            <div class="container-custom">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full sm:w-full md:w-1/2 px-4">
+                        <div class="relative">
+                            <div class="mb-10 sm:mb-[50px]">
+                                <div class="slider slider-for mb-6">
+                                    <div>
+                                        <div class="relative">
+                                            <img src="images/standard-project1.jpg" alt="" class="w-full">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="relative">
+                                            <img src="images/standard-project2.jpg" alt="" class="w-full">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="relative">
+                                            <img src="images/standard-project3.jpg" alt="" class="w-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider slider-nav">
+                                    <div>
+                                        <div class="slider-box relative size-24 sm:size-36 md:size-24 lg:size-24 p-2 cursor-pointer">
+                                            <img src="images/standard-project1.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slider-box relative size-24 sm:size-36 md:size-24 lg:size-24 p-2 cursor-pointer">
+                                            <img src="images/standard-project2.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slider-box relative size-24 sm:size-36 md:size-24 lg:size-24 p-2 cursor-pointer">
+                                            <img src="images/standard-project3.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="hidden md:block">
+                                <h3 class="text-xl lg:text-[24px] xl:text-[30px] text-vine-lighter font-semibold mb-5 lg:mb-8">What People Are Saying</h3>
+                                <div class="flex items-center mb-5 gap-[15px]">
+                                    <img src="images/user-img1.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-body-text mb-px">Alireza Alizarin</h4>
+                                        <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                            <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            Fri Sep 15, 2023
+                                        </h6>
+                                        <small class="block text-[10px] text-body-text">Source: Google</small>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-5 gap-[15px]">
+                                    <img src="images/user-img2.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-body-text mb-px">Antonia Gonzalez</h4>
+                                        <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                            <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            Tue Aug 01, 2023
+                                        </h6>
+                                        <small class="block text-[10px] text-body-text">Source: Google</small>
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-2.5 gap-[15px]">
+                                    <img src="images/user-img3.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                    <div>
+                                        <h4 class="text-sm font-bold text-body-text mb-px">Raouf Kaskas</h4>
+                                        <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                            <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                            Sat Jul 29, 2023
+                                        </h6>
+                                        <small class="block text-[10px] text-body-text">Source: Google</small>
+                                    </div>
+                                </div>
+                                <p class="text-sm lg:text-base text-body-text max-w-[553px]">
+                                    Amazing service! Sarah bulled eye the need and designed an amazing center pieces and arrangements, and delivered on time. Went beyond and above expectations! Thanks Sarah and thanks team :)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-full md:w-1/2 px-4">
+                        <div class="relative">
+                            <h3 class="text-2xl md:text-2xl lg:text-[30px] xl:text-4xl text-vine-lighter font-semibold mb-5 lg:mb-[30px]">Florist's Choice Daily Deal <span class="block text-stone font-normal mt-2">$49.99</span> </h3>
+                            <p class="text-body-text text-sm lg:text-base mb-5 lg:mb-[30px]">Let our professional designers create a stunning arrangement just for you, using a selection of our freshest seasonal flowers, arranged in a vase and ready to enjoy. You won't find a better deal than this!</p>
+                            <p class="text-xs text-body-text mb-5 lg:mb-[30px]"> <b>Disclaimer:</b> The images pf flowers displayed on this page are intended solely for illustrative purposes. While we strive to provide accurate and up-to-date photographs regarding flowers, it is important to note that due to varying factors such as local florist availability and seasonality, the actual flowers used in the bouquet may differ from the images presented. For precise details and pertinent information regarding specific flowers, we encourage you to contact your local Forest of Flowers shop.</p>
+
+                            <h3 class="text-body-text text-base mb-2">Size</h3>
+                            <div class="relative flex items-start gap-3 select-size mb-6 md:mb-9 flex-wrap">
+                                <div>
+                                    <input type="radio" id="test1" name="radio-group" checked class="absolute opacity-0 left-0 top-0">
+                                    <label for="test1" class="cursor-pointer transition-all">
+                                         <div class="p-1.5">
+                                            <div class="size-16 md:size-16 lg:size-24 mb-2">
+                                                <img src="images/standard-project1.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                            </div>
+                                            <div>
+                                                <h4 class="text-body-text text-center text-xs">
+                                                    Standard
+                                                    <span class="block">$49.99</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="test2" name="radio-group" class="absolute opacity-0 left-0 top-0">
+                                    <label for="test2" class="cursor-pointer transition-all">
+                                        <div class="p-1.5">
+                                            <div class="size-16 md:size-16 lg:size-24 mb-2">
+                                                <img src="images/standard-project2.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                            </div>
+                                            <div>
+                                                <h4 class="text-body-text text-center text-xs">
+                                                    Deluxe
+                                                    <span class="block">$64.99</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="test3" name="radio-group" class="absolute opacity-0 left-0 top-0">
+                                    <label for="test3" class="cursor-pointer transition-all">
+                                        <div class="p-1.5">
+                                            <div class="size-16 md:size-16 lg:size-24 mb-2">
+                                                <img src="images/standard-project3.jpg" alt="" class="max-h-full max-w-full object-contain object-center">
+                                            </div>
+                                            <div>
+                                                <h4 class="text-body-text text-center text-xs">
+                                                    Premium
+                                                    <span class="block">$79.99</span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <form id='myform' method='POST' action='#' class='quantity border border-divider-outline px-3 py-2.5 w-fit flex items-center mb-5 md:mb-8'>
+                                <span type='button' field='quantity' class='qtyminus minus text-xs text-stone cursor-pointer block'>
+                                    <i class="fas fa-minus"></i>
+                                </span>
+                                <input type='text' name='quantity' value='1' min-value='1' class='qty w-14 text-center outline-none shadow-none text-body-text text-sm' />
+                                <span type='button' field='quantity' class='qtyminus plus text-xs text-stone cursor-pointer block'>
+                                    <i class="far fa-plus"></i>
+                                </span>
+                            </form>
+
+                            <div class="relative mb-5 md:mb-7">
+                                 <ul id="tabs" class="flex w-full border-b gap-9 mb-4">
+                                    <li class="text-sm text-[#818181] -mb-px px-2.5 pb-4 border-b-2 border-darker-foliage text-darker-foliage"><a id="default-tab" class="flex items-center gap-2" href="#first"><i class="fas fa-truck"></i> Delivery</a></li>
+                                    <li class="text-sm text-[#818181] -mb-px px-2.5 pb-4 border-b-2 border-transparent"><a href="#second" class="flex items-center gap-2"><i class="fas fa-store"></i> Pickup</a></li>
+                                </ul>
+
+                                <div id="tab-contents">
+                                    <div id="first">
+                                        <div class="relative flex items-start gap-3 lg:gap-1 xl:gap-3 select-size flex-wrap">
+                                            <div>
+                                                <input type="radio" id="date1" name="radio-date" checked class="absolute opacity-0 left-0 top-0">
+                                                <label for="date1" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Monday, Dec. 4
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="date2" name="radio-date" class="absolute opacity-0 left-0 top-0">
+                                                <label for="date2" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Tuesday, Dec. 5
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="date3" name="radio-date" class="absolute opacity-0 left-0 top-0">
+                                                <label for="date3" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Wednesday, Dec. 6
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="date4" name="radio-date" class="absolute opacity-0 left-0 top-0">
+                                                <label for="date4" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    More Dates
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="second" class="hidden">
+                                        <div class="relative flex items-start gap-3 lg:gap-1 xl:gap-3 select-size flex-wrap">
+                                            <div>
+                                                <input type="radio" id="sedate1" name="radio-date2" checked class="absolute opacity-0 left-0 top-0">
+                                                <label for="sedate1" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Monday, Dec. 6
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="sedate2" name="radio-date2" class="absolute opacity-0 left-0 top-0">
+                                                <label for="sedate2" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Tuesday, Dec. 7
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="sedate3" name="radio-date2" class="absolute opacity-0 left-0 top-0">
+                                                <label for="sedate3" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    Wednesday, Dec. 8
+                                                </label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="sedate4" name="radio-date2" class="absolute opacity-0 left-0 top-0">
+                                                <label for="sedate4" class="cursor-pointer text-sm text-center xl:text-base text-body-text transition-all px-2 xl:px-3 py-1.5 xl:py-2.5">
+                                                    More Dates
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-[15px] mb-10">
+                                <a href="#" class="btn-primary w-[48%] p-2.5 xl:p-4 text-base xl:text-xl text-center block bg-sage text-vine-lighter hover:text-white">Add to Cart</a>
+                                <a href="#" class="btn-primary w-[48%] p-2.5 xl:p-4 text-base xl:text-xl text-center block bg-foliage">Buy Now</a>
+                                <a href="#" class="w-[4%] block text-center text-xl text-[#818181]"><i class="fal fa-heart"></i></a>
+                            </div>
+
+                            <div class="flex items-center justify-center flex-wrap -mx-1.5 md:-mx-3.5  lg:-mx-1.5 xl:-mx-3.5  mb-8 space-y-3 sm:space-y-0 md:space-y-3 lg:space-y-0">
+                                <div class="w-full sm:w-1/3 md:w-full lg:w-1/3 px-1.5 md:px-3.5 lg:px-1.5 xl:px-3.5">
+                                    <div class="bg-[#F0F0F0] p-4 px-1 md:p-5 lg:p-4 xl:p-5 md:px-4 lg:px-1 xl:px-4">
+                                        <img src="images/payment-img1.png" alt="" class="max-w-full min-h-[62px] object-contain mx-auto mb-5">
+                                        <h4 class="text-sm md:text-base lg:text-xs xl:text-base text-body-text text-center">
+                                            Guaranteed <br> Safe Checkout
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/3 md:w-full lg:w-1/3 px-1.5 md:px-3.5 lg:px-1.5 xl:px-3.5">
+                                    <div class="bg-[#F0F0F0] p-4 px-1 md:p-5 lg:p-4 xl:p-5 md:px-4 lg:px-1 xl:px-4">
+                                        <img src="images/payment-img2.png" alt="" class="max-w-full min-h-[62px] object-contain mx-auto mb-5">
+                                        <h4 class="text-sm md:text-base lg:text-xs xl:text-base text-body-text text-center">
+                                            100% <br> Satisfaction Guarantee
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/3 md:w-full lg:w-1/3 px-1.5 md:px-3.5 lg:px-1.5 xl:px-3.5">
+                                    <div class="bg-[#F0F0F0] p-4 px-1 md:p-5 lg:p-4 xl:p-5 md:px-4 lg:px-1 xl:px-4">
+                                        <img src="images/payment-img3.png" alt="" class="max-w-full min-h-[62px] object-contain mx-auto mb-5">
+                                        <h4 class="text-sm md:text-base lg:text-xs xl:text-base text-body-text text-center">
+                                            Real <br> Local Florist
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overflow-hidden mb-10 md:mb-0">
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="7">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 pb-3 lg:pb-7 text-lg lg:text-xl font-semibold text-stone">
+                                            Features
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="8">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 lg:py-7 text-lg lg:text-xl font-semibold text-stone">
+                                            Care Instructions
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="9">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 lg:py-7 text-lg lg:text-xl font-semibold text-stone">
+                                            Delivery
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section" tabindex="10">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 lg:py-7 text-lg lg:text-xl font-semibold text-stone">
+                                            Frequently Asked Questions
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                            </div>
+                        </div>
+
+                        <div class="block md:hidden">
+                            <h3 class="text-2xl md:text-[30px] text-vine-lighter font-semibold mb-4 md:mb-8">What People Are Saying</h3>
+                            <div class="flex items-center mb-5 gap-[15px]">
+                                <img src="images/user-img1.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                <div>
+                                    <h4 class="text-sm font-bold text-body-text mb-px">Alireza Alizarin</h4>
+                                    <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                        <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        Fri Sep 15, 2023
+                                    </h6>
+                                    <small class="block text-[10px] text-body-text">Source: Google</small>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-5 gap-[15px]">
+                                <img src="images/user-img2.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                <div>
+                                    <h4 class="text-sm font-bold text-body-text mb-px">Antonia Gonzalez</h4>
+                                    <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                        <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        Tue Aug 01, 2023
+                                    </h6>
+                                    <small class="block text-[10px] text-body-text">Source: Google</small>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-2.5 gap-[15px]">
+                                <img src="images/user-img3.png" alt="" class="max-w-full h-[44px] w-[44px]">
+                                <div>
+                                    <h4 class="text-sm font-bold text-body-text mb-px">Raouf Kaskas</h4>
+                                    <h6 class="flex items-center gap-2 text-sm text-body-text mb-px">
+                                        <span class="text-sm text-[#FFD401]"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                        Sat Jul 29, 2023
+                                    </h6>
+                                    <small class="block text-[10px] text-body-text">Source: Google</small>
+                                </div>
+                            </div>
+                            <p class="text-sm md:text-base text-body-text max-w-[553px]">
+                                Amazing service! Sarah bulled eye the need and designed an amazing center pieces and arrangements, and delivered on time. Went beyond and above expectations! Thanks Sarah and thanks team :)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light-foliage py-10 xl:py-16 mb-4 flowers-mother-sec">
+            <div class="container-custom xl:px-8">
+                <div class="flex items-center flex-wrap -mx-4">
+                    <div class="w-full md:w-[40%] xl:w-[33%] px-4">
+                        <img src="images/gift-box-and-flowers.jpg" alt="" class="w-full mb-5 md:mb-0" />
+                    </div>
+                    <div class="w-full md:w-[60%] xl:w-[67%] px-4">
+                        <h3 class="text-2xl xl:text-[30px] text-vine-lighter mb-3 font-semibold">Add a Personal Touch</h3>
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">While a bouquet of flowers beautifully conveys your love and appreciation, sometimes, you want to add a little something more. At Forest of Flowers, we offer a range of extra touches to enhance your floral gift and make every bouquet unique.</h5>
+                        <ul class="mb-3 space-y-2 pl-6">
+                            <li class="text-sm xl:text-base text-body-text list-disc">
+                                <b class="text-vine-lighter underline">Balloons:</b> A balloon adds a festive touch and turns the gift into a mini-celebration. 
+                            </li>
+                            <li class="text-sm xl:text-base text-body-text list-disc">
+                                <b class="text-vine-lighter underline">Teddy Bears:</b> Teddy bears are there to give you a hug whenever you need it! It's a thoughtful choice if you can’t be there to give them a hug in person.
+                            </li>
+                            <li class="text-sm xl:text-base text-body-text list-disc">
+                                <b class="text-vine-lighter underline">Cards:</b> Sometimes, there's so much to say, and a bouquet alone might not capture it all. A card provides the space to pen down heartfelt emotions, memories, or even a simple note of appreciation.
+                            </li>
+                        </ul>
+                        <h5 class="text-sm xl:text-base text-body-text mb-6">Every gesture, whether big or small, plays a role in crafting a memorable gift. With these thoughtful additions, you can transform a beautiful floral arrangement into an unforgettable experience!</h5>
+                        <a href="#" class="btn-primary">
+                            <img src="images/fofc-white-icon.svg" alt="" class="max-w-full" />
+                            Learn More About Our Add Ons
+                        </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-[#477722] py-[40px] sm:py-[60px]">
+            <div class="container-custom px-[59px] sm:p-0">
+                <div class="flex justify-between flex-wrap">
+                    <div class="w-full lg:w-fit lg:mr-4">
+                        <img src="images/footer-logo.svg" alt="" class="max-w-[200px] md:max-w-[150px] lg:max-w-[150px] xl:max-w-full mb-[30px] md:mb-12">
+                        <ul class="flex items-center mb-[30px] md:mb-0 flex-wrap md:max-w-[190px] lg:max-w-full">
+                            <li class="text-xs text-white mr-2 lg:w-full lg:mb-2 xl:w-fit xl:mb-0">Connect with us on Social Media</li>
+                            <li><a href="#" class="text-base text-white mr-2 hover:text-petal"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="text-base text-white hover:text-petal"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-fit mb-[0] sm:mb-[30px] md:mb-[30px] lg:mb-[0]">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase lg:mb-4 md:text-xs xl:text-base">
+                            LOCATIONS
+                        </h3>
+                        <div class="flex gap-5 lg:gap-14">
+                            <div class="w-6/12">
+                                <ul class="space-y-1.5 md:space-y-2.5">
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Brantford</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Burlington</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Cambridge</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Grimsby</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Kitchener</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">London</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Mississauga</a></li>
+                                </ul>
+                            </div>
+                            <div class="w-6/12">
+                                <ul class="space-y-1.5 md:space-y-2.5">
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Oakville</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Peterborough</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Sarnia</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">St Thomas</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Stratford</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Strathroy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-fit my-[30px] sm:my-0">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            ABOUT
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">About Forest of Flowers</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Franchise Opportunities</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Blog</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">FAQ</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Contact Us</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Careers</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-fit">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            MORE INFO
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Refund Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Fee Chart</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-fit">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            MY ACCOUNT
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Log In</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Wishlist</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">My Orders</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Subscriptions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-8">
+                    <p class="text-[10px] text-white text-center">
+                        <span class="pr-1.5 md:mr-1.5 border-r border-white table mx-auto md:inline">© 2024 Forest of Flowers. All rights reserved.</span>
+                        Designed by REM Web Solutions. Developed by Kodetek.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
