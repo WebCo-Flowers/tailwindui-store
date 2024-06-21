@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forest of Flowers</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
+        <!-- Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./js/tailwind.config.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="relative z-50 md:pb-1 border-b-2 border-divider-outline custom-button card">
+            <div class="bg-darker-foliage py-3.5 text-center">
+                <h3 class="text-base xl:text-[20px] text-white">SAME DAY DELIVERY ends in <span class="font-bold">21h 56m 58s</span></h3>
+            </div>
+            <div class="bg-light-foliage py-2 hidden lg:block">
+                <ul class="flex items-center justify-center gap-8">
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">About</a></li>
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">Petal Perks Rewards</a></li>
+                    <li><a href="#" class="text-xs block text-body-text hover:text-petal">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="container-custom py-4">
+                <div class="flex items-center">
+                    <div class="w-2/6">
+                        <button class="navbar-toggler table lg:hidden" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <p class="text-xs text-body-text hidden lg:block">
+                            <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal hover:no-underline">Kitchener</a>
+                        </p>
+                    </div>
+                    <div class="w-2/6">
+                        <a href="#" class="table mx-auto">
+                            <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto lg:table">
+                            <img src="images/mobile-logo.svg" alt="" class="max-w-full table lg:hidden">
+                        </a>
+                    </div>
+                    <div class="w-2/6">
+                        <div class="flex items-center justify-end gap-[15px] lg:gap-[20px] xl:gap-[31px]">
+                            <a href="#" class="group text-xs flex gap-2 items-center text-body-text hover:text-foliage">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-user"></i></span>
+                                <span class="hidden lg:block">Log in to My Account</span>
+                            </a>
+                            <a href="#" class="text-xs gap-2 items-center text-body-text group hover:text-foliage hidden lg:flex">
+                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-heart"></i></span>
+                                <span class="hidden lg:block">Wishlist</span>
+                            </a>
+                             <div class="relative group block z-30">
+                                <a href="javascript:void(0;)" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
+                                    <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
+                                        <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
+                                    </span>
+                                    <span class="hidden lg:block">Cart</span>
+                                </a>
+
+                                <div class="absolute top-full bg-white right-0 w-full p-4 min-w-[323px] border border-divider-outline hidden group-hover:block">
+                                    <ul class="space-y-2.5 mb-6">
+                                        <li><a href="#" class="flex items-center gap-3">
+                                            <div class="h-[70px] w-[70px] border border-divider-outline">
+                                                <img src="images/daily-deal-standard1.png" alt="" class="h-full w-full object-contain object-center">
+                                            </div>
+                                            <h4 class="text-xs text-body-text font-semibold">
+                                                Florist's Choice Daily Deal
+                                                <span class="font-normal block">
+                                                    Standard
+                                                </span>
+                                            </h4>
+                                        </a></li>
+                                    </ul>
+                                    <a href="#" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
+                                        Checkout
+                                    </a>
+                                    <a href="#" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
+                                        View Shopping Cart
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white py-5 px-4 pb-0 w-full h-[calc(100vh-123px)] overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto">
+                <div class="block lg:hidden relative">
+                    <input type="text" placeholder="Find a Gift" class="border border-divider-outline w-full py-4 pl-2.5 pr-10 outline-none shadow-none text-xs text-light-body-text">
+                    <a href="#" class="text-body-text text-base absolute right-4 top-2/4 -translate-y-1/2"><i class="far fa-search"></i></a>
+                </div>
+                <p class="text-xs text-body-text ml-auto table lg:hidden my-5">
+                    <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal">Kitchener</a>
+                </p>
+                <ul class="block items-center justify-center xl:gap-[39px] lg:flex lg:gap-5">
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center  gap-1 py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Deal of the Day</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Autumn</a>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out"> Occasions <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start pt-7 pb-6 px-7">
+                                        <ul class="space-y-2.5 w-[57%]">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5 w-[42%]">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Flowers & Prants <i class="far fa-angle-down text-foliage"></i> </a>
+                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start justify-between pt-7 pb-6 px-8">
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Weddings & Events <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="w-full lg:w-[52%] px-4">
+                                    <div class="flex item-start justify-between pt-7 pb-6 px-8">
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="space-y-2.5">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full lg:w-[48%] px-4">
+                                    <div class="relative lg:table w-full ml-auto">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Add Ons</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Subscription</a>
+                    </li>
+                    <li class="relative group block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Locations <i class="far fa-angle-down text-foliage"></i></a>
+                        <div class="relative lg:absolute top-full bg-white right-0 w-full p-4 lg:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
+                            <ul class="space-y-2.5">
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">About</a>
+                    </li>
+                    <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Petal Perks Rewards</a>
+                    </li>
+                    <li class="relative py-4 lg:py-2 block lg:hidden">
+                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Breadcrumb -->
+        <div class="container-custom py-4 md:py-5 lg:pt-[30px] lg:pb-[18px]">
+            <ul class="flex items-center gap-[8px]">
+                <li><a href="#" class="text-vine-lighter text-xs font-semibold underline hover:no-underline">Shop</a></li>
+                <li class="text-body-text text-xs"><i class="far fa-angle-right"></i></li>
+                <li><a href="#" class="text-vine-lighter text-xs font-semibold underline hover:no-underline">Occasions</a></li>
+                <li class="text-body-text text-xs"><i class="far fa-angle-right"></i></li>
+                <li class="text-body-text text-xs">Mother's Day</li>
+            </ul>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <!-- Intro -->
+        <div class="bg-[url('images/mothers-day-intro-bg.jpg')] bg-cover bg-center bg-no-repeat py-12 md:py-12 lg:pt-16 lg:pb-12">
+            <div class="container-custom md:px-8">
+                <div class="md:max-w-[450px] lg:max-w-[550px] xl:max-w-[620px]">
+                    <h2 class="text-vine-lighter font-semibold text-2xl md:text-3xl lg:text-3xl xl:text-4xl mb-5">Make Mother's Day Memorable <br class="hidden md:block"> with Forest of Flowers</h2>
+                    <p class="text-body-text text-sm sm:text-sm xl:text-base mb-4">Every year, you look for the perfect way to show Mom how much she means to you. So do we. That’s why we’re not just any florist – we are your full-service “Field Fresh Quality for Less” solution to making this Mother’s Day truly special!</p>
+                    <p class="text-body-text text-sm sm:text-sm xl:text-base mb-4">Whether it's a last-minute decision or a plan you've been thinking about for days, Forest of Flowers is always ready to take your <a href="#" class="text-vine-lighter underline font-semibold hover:no-underline">Mother’s Day order online.</a> And if you prefer that personal touch, our <a href="#"  class="text-vine-lighter underline font-bold hover:no-underline">local florists throughout Southwestern Ontario</a> are open seven days a week.</p>
+                    <p class="text-body-text text-sm sm:text-sm xl:text-base">Because it's not just about sending Mom flowers. It's about sending her a heartfelt message of love through a floral arrangement as unique and beautiful as she is!</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Intro -->
+
+        <!-- Important Note -->
+        <div class="py-[30px] border-b border-divider-outline">
+            <div class="container-custom md:px-11">
+                <div class="block xl:flex items-center xl:gap-5 justify-between">
+                    <div class="mb-4 xl:mb-0 xl:w-[62%]">
+                        <h2 class="text-vine-lighter text-xl md:text-2xl lg:text-[24px] xl:text-[30px] font-semibold mb-2.5">IMPORTANT: Deadline for Mother’s Day Flower Delivery</h2>
+                        <p class="text-sm md:text-base text-body-text max-w-[800px]">To guarantee delivery on Mother’s Day, we encourage you to <b class="font-bold">place your order at least a day in advance!</b> Same-day deliveries aren't always possible on Mother's Day.</p>
+                    </div>
+                    <a href="#" class="btn-primary text-xs md:text-xs lg:text-base"><img src="images/fofc-white-icon.svg" alt=""> Hurry! Schedule Mother’s Day Flower Delivery Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Important Note-->
+
+        <!-- Product List -->
+        <div class="py-10 md:pt-[30px] md:pb-16">
+            <div class="container-custom">
+                <div class="flex items-start flex-wrap -mx-1.5 md:mx-0 gap-y-2 md:gap-5 lg:gap-10 mb-10 md:mb-5 lg:mb-11">
+                    <div class="w-1/2 sm:w-1/4 md:w-fit px-1.5 md:p-0">
+                        <select class="bg-white border border-divider-outline text-stone text-xs md:text-sm lg:text-base rounded-none block w-full md:w-[165px] lg:w-[194px] p-1.5 md:p-2 lg:p-3 outline-none shadow-none uppercase">
+                            <option selected>SORT BY</option>
+                            <option>Relevance</option>
+                            <option>Lowest to Highest Price</option>
+                            <option>Highest to Lowest Price</option>
+                        </select>
+                    </div>                    
+                    <div class="w-1/2 sm:w-1/4 md:w-fit px-1.5 md:p-0">
+                        <select class="bg-white border border-divider-outline text-stone text-xs md:text-sm lg:text-base rounded-none block w-full md:w-[165px] lg:w-[194px] p-1.5 md:p-2 lg:p-3 outline-none shadow-none uppercase">
+                            <option selected>PRICE RANGE</option>
+                            <option>Relevance</option>
+                            <option>Lowest to Highest Price</option>
+                            <option>Highest to Lowest Price</option>
+                        </select>
+                    </div>
+                    <div class="w-1/2 sm:w-1/4 md:w-fit px-1.5 md:p-0">
+                        <select class="bg-white border border-divider-outline text-stone text-xs md:text-sm lg:text-base rounded-none block w-full md:w-[165px] lg:w-[194px] p-1.5 md:p-2 lg:p-3 outline-none shadow-none uppercase">
+                            <option selected>cOLOUR</option>
+                            <option>White</option>
+                            <option>Yellow</option>
+                            <option>Green</option>
+                            <option>Blue</option>
+                            <option>Purple</option>
+                            <option>Red</option>
+                            <option>Pink</option>
+                            <option>Orange</option>
+                            <option>Blush</option>
+                            <option>Earth Tones</option>
+                            <option>Foliage</option>
+                            <option>Tropical</option>
+                            <option>Garden Roses</option>
+                        </select>
+                    </div>
+                    <div class="w-1/2 sm:w-1/4 md:w-fit px-1.5 md:p-0">
+                        <select class="bg-white border border-divider-outline text-stone text-xs md:text-sm lg:text-base rounded-none block w-full md:w-[165px] lg:w-[194px] p-1.5 md:p-2 lg:p-3 outline-none shadow-none uppercase">
+                            <option selected>FLOWER TYPE</option>
+                            <option>annual</option>
+                            <option>perennial</option>
+                            <option>biennial</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-2 md:-mx-4 gap-y-[30px] product-list">
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img1.png" alt="">
+                            </div>
+                            <h4>Artist's Inspiration</h4>
+                            <h6>$99.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img2.png" alt="">
+                            </div>
+                            <h4>Hand-Tied Subscription</h4>
+                            <h6>$74.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img3.png" alt="">
+                            </div>
+                            <h4>One Dozen Red Roses</h4>
+                            <h6>$69.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img4.png" alt="">
+                            </div>
+                            <h4>Two Dozen Red Roses</h4>
+                            <h6>$119.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img5.png" alt="">
+                            </div>
+                            <h4>Gorgeous Gem Tones...</h4>
+                            <h6>$84.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img6.png" alt="">
+                            </div>
+                            <h4>Simply Pink Arrangement</h4>
+                            <h6>$64.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img7.png" alt="">
+                            </div>
+                            <h4>One Dozen Coloured Roses</h4>
+                            <h6>$69.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img8.png" alt="">
+                            </div>
+                            <h4>Thankful - Cheery Yellow Daisies</h4>
+                            <h6>$49.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img9.png" alt="">
+                            </div>
+                            <h4>Enchantment Featuring...</h4>
+                            <h6>$49.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img10.png" alt="">
+                            </div>
+                            <h4>Sunlit Fields with Orange...</h4>
+                            <h6>$54.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img11.png" alt="">
+                            </div>
+                            <h4>Splendid Pink Gerberas</h4>
+                            <h6>$69.99</h6>
+                        </a>
+                    </div>
+                    <div class="w-6/12 md:w-4/12 lg:w-3/12 px-2 md:px-4">
+                        <a href="#" class="product-box">
+                            <div class="box-img">
+                                <img src="images/product-list-img12.png" alt="">
+                            </div>
+                            <h4>Pastel Perfection with Soft Pink</h4>
+                            <h6>$89.99</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Product List -->
+
+        <!-- Our Promise -->
+        <div class="bg-light-foliage py-10 md:py-12">
+            <div class="container-custom">
+                <div class="relative text-center max-w-[610px] lg:max-w-[1140px] mx-auto mb-10 lg:mb-11">
+                    <h2 class="text-vine-lighter text-xl md:text-[24px] lg:text-[30px] mb-2 lg:mb-4 font-semibold">Our Mother’s Day Promise to You</h2>
+                    <p class="text-body-text text-sm lg:text-base"> <b class="font-bold">We get it – ordering flowers online takes a leap of faith!</b> It's only natural to have doubts when you can't see our products in person or chat with our florists face-to-face. But rest assured, with Forest of Flowers, you aren't just getting flowers — you're getting <b class="font-bold">our promise to go above and beyond</b> to make sure your Mother’s Day bouquet is truly perfect!</p>
+                </div>
+                <div class="relative">
+                    <h2 class="text-vine-lighter text-xl md:text-[24px] lg:text-[26px] mb-5 md:mb-5 lg:mb-8 font-semibold text-center">
+                        Our Promise
+                    </h2>
+                    <div class="flex flex-wrap -mx-4">
+                        <div class="w-full md:w-6/12 px-4">
+                            <ul class="space-y-3 mb-3 md:space-y-6 md:mb-0">
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Flowers Just Like The Photos:</b> Rest assured that the freshness and beauty you see in our photos is exactly what we deliver to Mom’s doorstep! The arrangement you order will be handcrafted by a local florist using fresh, local flowers so it’s everything you imagine and more
+                                </li>
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Timely Delivery: </b> We know that timing matters as much as the flowers themselves! Order at least a day before Mother’s Day and our flowers will reach Mom exactly as promised, never late and not a moment too soon.
+                                </li>
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Guaranteed Quality:</b>  “Field Fresh Quality for Less” is more than a motto! We source our flowers as locally as possible so they stay fresh longer — brightening the room for days after arrival. We stand firmly behind the quality of our flowers and our service and proudly offer a 100% Unconditional Satisfaction Guarantee.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-6/12 px-4">
+                            <ul class="space-y-3 md:space-y-6">
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Outstanding Value:</b> We pride ourselves on offering premium bouquets at fair and transparent prices. There are no hidden fees, even for last-minute orders. Plus, every order earns you Petal Perks rewards, saving you on every order after that!
+                                </li>
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Personal Touches:</b> Want to add a message straight from the heart? You can! Choose specific arrangements or include a personal note to Mom so your gift is as unique as the bond you share.
+                                </li>
+                                <li class="text-body-text text-sm lg:text-base pl-6 relative">
+                                    <span class="text-sm lg:text-base text-petal absolute left-0 top-0"><i class="far fa-check"></i></span>
+                                    <b class="font-bold">Handled with Care, Every Step of the Way:</b> Our flower delivers team treats every flower with the gentleness it deserves. From our doors to yours, we ensure your bouquet arrives in perfect condition — no wilts, no damage!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Our Promise -->
+
+        <!-- Customers -->
+        <!-- <div class="bg-white p-[30px] shadow-[0_0_10px_0_rgba(0,0,0,0.20)]">
+            <p class="text-body-text text-base mb-6">
+                “My son and daughter-in-law ordered flowers for me for Mother’s Day. They chose <a href="#" class="font-bold text-vine-lighter underline">Florist’s Choice.</a> It is still absolutely beautiful, even after 6 days. You are definitely my new florist!”
+            </p>
+            <div class="flex gap-4 items-center">
+                <img src="images/customer-img1.png" alt="" class="h-[46px] w-[46px] object-cover object-center">
+                <h4 class="text-base text-bodt-text font-bold">Sally Livingstone</h4>
+            </div>
+        </div> -->
+        <div class="py-10 md:py-[60px]">
+            <div class="container-custom">
+                <div class="relative text-center max-w-[1140px] mx-auto mb-8">
+                    <h2 class="text-vine-lighter text-xl lg:text-[30px] mb-2 lg:mb-4 font-semibold">But Don’t Take It From Us…See What Our Customers Are Saying!</h2>
+                    <p class="text-body-text text-sm lg:text-base"> We're thrilled that thousands of people have put their trust in us and returned time and time again, always with unforgettable Mother’s Day memories.</p>
+                </div>
+                 <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                    <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
+                        <div class="customer-review">
+                            <p>“My son and daughter-in-law ordered flowers for me for Mother’s Day. They chose <a href="#">Florist’s Choice.</a> It is still absolutely beautiful, even after 6 days. You are definitely my new florist!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img1.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Sally Livingstone</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“I was out of town during Mother’s Day this year and had these amazing tulips delivered to my Mom. They looked amazing, and she loved them. The online ordering was so simple.”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img2.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Lauren Kaisosky</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“My Mom received the most beautiful cut flower arrangement three weeks ago. The flowers were so fresh and colourful, and added such a cheery brightness to her nursing home room.” </p>
+                             <div class="user-info">
+                                <img src="images/customer-img3.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Jane Eastman</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
+                        <div class="customer-review">
+                            <p>“I ordered flowers for Mom at 9 AM, and they were on her desk by 3 PM. Flowers make everyone happy, and these were no exception!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img4.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Mike & Erin Johnson</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“Made the order from Saskatchewan. It was quick and easy. The flowers arrived just a couple hours after the order was made. The best part was the “Wow!” my mother sent me.”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img5.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Dan Hughesman</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“Ordered a florist choice bouquet for my 83-year-old mother-in-law. It was delivered on time and Mom was very HAPPY with the whole experience!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img6.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Curt & Julie Monteith</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
+                        <div class="customer-review">
+                            <p>“I live in Nova Scotia and ordered flowers online for my mom in Ontario. They were beautiful and arrived on Mother’s Day as promised. Excellent price to boot!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img7.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Susan Eitel</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“My Nana loves the flowers I sent to her for Mother's Day. Thank you for such an easy process! Will definitely use Forest of Flowers again!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img8.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Becca Tracey</h4>
+                            </div>
+                        </div>
+                        <div class="customer-review">
+                            <p>“The bouquet arrangement was beautiful. Both my family and I appreciate the time and effort put towards making this a special Mother's Day!”</p>
+                             <div class="user-info">
+                                <img src="images/customer-img9.png" alt="">
+                                <h4 class="text-base text-bodt-text font-bold">Devon Lucan</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- End Customers -->
+
+        <!-- Flowers Delivered -->
+        <div class="pb-10 md:pb-[70px]">
+            <div class="container-custom">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full md:w-[67%] px-4">
+                        <div class="max-w-[900px] mb-10 md:mb-0">
+                            <h3 class="text-2xl xl:text-[30px] text-vine-lighter mb-3 md:mb-6 font-semibold">Mother’s Day Flowers Delivered with Care</h3>
+                            <p class="text-sm xl:text-base text-bofy-text mb-2.5 md:mb-5">We understand that every bouquet carries a heartfelt message, and you need that message to arrive on time and in perfect condition. On Mother’s Day, we go the extra mile with extended delivery hours from 8 AM to 8 PM so that everyone’s love reaches their mom on this special day.</p>
+                            <p class="text-sm xl:text-base text-bofy-text mb-2.5 md:mb-5">While we can't guarantee an exact delivery time, we typically complete deliveries within four hours. Feel free to mention your preferred time slot in the special instructions, and we’ll give it our all to honour it.</p>
+                            <p class="text-sm xl:text-base text-bofy-text">Our delivery services start at just $12 per order. For a detailed breakdown, do visit our <a href="#" class="text-vine-lighter underline font-bold hover:no-underline">Delivery Fee Page.</a> </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-[33%] px-4">
+                        <h3 class="text-xl xl:text-[26px] text-vine-lighter mb-3 font-semibold">IMPORTANT: Deadline for Mother’s Day Flower Delivery</h3>
+                        <p class="text-sm xl:text-base text-bofy-text mb-4">To guarantee delivery on Mother’s Day, we encourage you to <b class="font-bold">place your order at least a day in advance!</b> Same-day deliveries aren't always possible on Mother's Day.</p>
+                        <a href="#" class="btn-primary text-base md:text-xs md:p-2 lg:text-base"><img src="images/fofc-white-icon.svg" alt="">Schedule Flower Delivery Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Flowers Delivered -->
+
+        <!-- Flowers for Mother -->
+        <div class="bg-light-foliage py-10 md:py-[60px] flowers-mother-sec">
+            <div class="container-custom md:px-8">
+                <div class="flex -mx-4 flex-wrap">
+                    <div class="w-full md:w-[42%] px-4">
+                        <img src="images/smiling-mother-with-son.jpg" alt="" class="w-full mb-5 md:mb-0" />
+                    </div>
+                    <div class="w-full md:w-[58%] px-4">
+                        <h3 class="text-2xl xl:text-[30px] text-vine-lighter mb-3 font-semibold">The Beauty of Flowers for Mother’s Day</h3>
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">Mother's Day isn’t just a date on the calendar — it's your chance to celebrate the most important caregivers in your life. And sending flowers is one of the best ways to show how much you care!</h5>
+                        <ul class="mb-4 space-y-4 pl-6">
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="font-bold">Give the Gift of Love:</b> Just like a mother's love never fades, sending flowers on Mother's Day is timeless. Flowers remind Mom how much you appreciate all her love, care, and support over the years!</li>
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="font-bold">Speak Louder Than Words:</b> Flowers have a language of their own, speaking love, gratitude, and admiration on a deeper level. There’s no better way to express how you feel than through a beautiful, fragrant Mother’s Day bouquet!</li>
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="font-bold">Show Your Admiration:</b> We all know a mom who deserves some extra praise! Whether it’s a best friend, a colleague, a neighbour, or any mom you admire, flowers let her know that you see her hard work and you’re cheering her on.</li>
+                        </ul>
+                        <a href="#" class="text-base font-bold text-vine-lighter underline hover:no-underline"> Read more about the Beauty of Flowers.... </a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- End Flowers for Mother -->
+
+        <!-- Accordion -->
+        <div class="py-10 md:py-[60px]">
+            <div class="container-custom md:px-8">
+                <div class="relative text-center max-w-[1140px] mx-auto mb-5 md:mb-8">
+                    <h2 class="text-vine-lighter text-2xl lg:text-[30px] mb-4 font-semibold">What Flowers Should You Send on Mother’s Day?</h2>
+                    <p class="text-body-text text-sm md:text-base"> Every flower tells a story, especially when they’re gifted with love on Mother's Day. Throughout history, certain blooms have become synonymous with this special occasion, each with its own unique message! Some of the most popular flowers for Mother’s Day include:</p>
+                </div>
+                <div class="max-w-[1141px] mx-auto">
+                    <div class="flex -mx-4 flex-wrap mb-[30px]">
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="border max-md:border-b-0  border-divider-outline overflow-hidden">
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="1">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Roses
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="2">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Carnations
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="3">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Lilies
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section" tabindex="4">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Orchids
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="border border-divider-outline overflow-hidden">
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="5">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Tulips
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="6">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Sunflowers
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section" tabindex="7">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Daisies
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-base text-body-text mb-4 text-center">As you pick the perfect flowers for Mother's Day, remember that you're sending more than a bouquet — you're sending a message. Choose the one that resonates with you the most!</p>
+                        <p class="text-base text-body-text mb-4 text-center"><b class="font-bold">Still not sure which flowers to send for Mother’s Day?</b> Let our expert florists work their magic. Our <a href="#" class="text-bold text-vine-lighter underline font-bold hover:no-underline">Florist’s Choice Daily Deal</a> is sure to please!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accordion -->
+
+        <!-- Personal Gift -->
+        <div class="bg-light-foliage py-10 md:py-[60px] flowers-mother-sec">
+            <div class="container-custom md:px-8">
+                <div class="flex xl:items-center flex-wrap -mx-4 max-md:flex-col-reverse">
+                    <div class="w-full md:w-[58%] px-4">
+                        <h3 class="text-2xl xl:text-[30px] text-vine-lighter mb-3 font-semibold">Add a Personal Touch to Your Mother’s Day Gift</h3>
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">While a bouquet of flowers beautifully conveys your love and appreciation on Mother's Day, sometimes, you want to add a little something more. At Forest of Flowers, we offer a range of extra touches to enhance your floral gift and make every Mother’s Day bouquet as unique as the bond you share with Mom.</h5>
+                        <ul class="mb-4 space-y-2 pl-6">
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="text-vine-lighter font-bold underline">Balloons:</b> A balloon, especially one with a "Happy Mother's Day" message, adds a festive touch and turns the gift into a mini-celebration. </li>
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="text-vine-lighter font-bold underline">Teddy Bears:</b> Teddy bears are there to give you a hug whenever you need it! It's a thoughtful choice if you can’t be there to give Mom a hug in person.</li>
+                            <li class="text-sm xl:text-base text-body-text list-disc"><b class="text-vine-lighter font-bold underline">Mother’s Day Cards:</b> Sometimes, there's so much to say, and a bouquet alone might not capture it all. A card provides the space to pen down heartfelt emotions, memories, or even a simple note of appreciation.</li>
+                        </ul>
+                        <h5 class="text-sm xl:text-base text-body-text">Every gesture, whether big or small, plays a role in crafting a memorable Mother's Day surprise. With these thoughtful additions, you can transform a beautiful floral arrangement into an unforgettable experience!</h5>
+                    </div>
+                    <div class="w-full md:w-[42%] px-4">
+                        <img src="images/teddy-bear-and-flowers.jpg" alt="" class="w-full mb-5 md:mb-0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Personal Gift -->
+
+        <!-- IMPORTANT Delivery -->
+        <div class="py-10 md:py-[60px]">
+            <div class="container-custom">
+                <div class="block lg:flex items-center gap-5 xl:gap-14 justify-between">
+                    <div class="xl:w-3/5">
+                        <h2 class="text-vine-lighter text-xl md:text-[24px] xl:text-[30px] font-semibold mb-2.5">IMPORTANT: Deadline for Mother’s Day Flower Delivery</h2>
+                        <p class="text-sm md:text-base text-body-text max-w-[800px] mb-2 md:mb-4 lg:mb-0">To guarantee delivery on Mother’s Day, we encourage you to <b>place your order at least a day in advance!</b> Same-day deliveries aren't always possible on Mother's Day.</p>
+                    </div>
+                    <a href="#" class="btn-primary text-xs md:text-base lg:text-sm xl:text-base md:whitespace-nowrap"> <img src="images/fofc-white-icon.svg" alt=""> Hurry! Schedule Mother’s Day Flower Delivery Now </a>
+                </div>
+            </div>
+        </div>
+        <!-- End IMPORTANT Delivery -->
+
+        <!-- Subscription -->
+        <div class="bg-light-foliage py-10 md:py-[60px] flowers-mother-sec">
+            <div class="container-custom md:px-8">
+                <div class="flex xl:items-center -mx-4 flex-wrap">
+                    <div class="w-full md:w-[42%] px-4">
+                        <img src="images/flowers-in-a-vase.jpg" alt="" class="w-full mb-5 md:mb-0" />
+                    </div>
+                    <div class="w-full md:w-[58%] px-4">
+                        <h3 class="text-2xl xl:text-[30px] text-vine-lighter mb-3 font-semibold">Give the Gift that Keeps on Blooming: <br class="hidden lg:block">  A Fresh Flower Subscription!</h3>
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">Why limit the joy to just one day? With a <a class="text-vine-lighter font-bold underline">Monthly Hand-Tied Bouquet Flower Subscription,</a> your love and gratitude go beyond a single gesture. Surprise your Mom with fresh blooms delivered right to her doorstep not just once, but month after month!</h5>
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">You can choose the delivery frequency that suits her best: weekly, every other week, or monthly. Whether it's for three months, six months, or a full year (12 months), each delivery will be a lovely reminder of your enduring love and appreciation.</h5>                        
+                        <h5 class="text-sm xl:text-base text-body-text mb-3">Imagine her delight as she receives beautifully crafted bouquets regularly, each as fresh and vibrant as the last, all saying, "I love you, Mom!"</h5>                        
+                        <a href="#" class="btn-primary text-xs lg:text-base"><img src="images/fofc-white-icon.svg" alt="">Hurry! Schedule Mother’s Day Flower Delivery Now</a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- End Subscription -->
+
+        <!-- Frequently Asked Questions -->
+        <div class="py-10 md:py-[60px]"> 
+            <div class="container-custom md:px-8">
+                <div class="relative text-center max-w-[1140px] mx-auto mb-6 md:mb-8">
+                    <h2 class="text-vine-lighter text-2xl md:text-[30px] font-semibold">Frequently Asked Questions</h2>
+                </div>
+                <div class="max-w-[1141px] mx-auto">
+                    <div class="flex -mx-4 flex-wrap">
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="border max-md:border-b-0  border-divider-outline overflow-hidden">
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="1">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Mother’s Day
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="2">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Ordering and Selection
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="3">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Delivery
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="4">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Pricing & Payment
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="5">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Personalization & Add-Ons
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section" tabindex="6">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Freshness & Quality
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-4">
+                            <div class="border border-divider-outline overflow-hidden">
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="7">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Customer Support & Issues
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="8">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Care Instructions
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="9">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Order Modifications & Cancellations
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                 <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section border-b border-divider-outline" tabindex="10">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            International Deliveries
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                                <!-- accordion-tab  -->
+                                <div class="group outline-none accordion-section" tabindex="7">
+                                    <div class="group transition ease duration-500 cursor-pointer relative">
+                                        <div class="group-focus:text-vine-lighter transition ease duration-500 py-3 px-4 lg:py-4 xl:py-7 lg:px-5 xl:px-8 text-lg md:text-base xl:text-xl font-semibold text-stone">
+                                            Gift Options
+                                        </div>
+                                        <div class="text-base text-stone inline-flex transform transition ease duration-500 group-focus:-rotate-180 absolute top-1/2 -translate-y-2/4 right-4 ml-auto" >
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="group-focus:max-h-screen max-h-0 px-4 overflow-hidden ease duration-500">
+                                        <ul class="mb-4 space-y-4 pl-4 lg:pl-8">
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Meaning:</b> Roses come in many colours, and each one has a different meaning. Pink roses express gratitude and appreciation, while yellow ones signify friendship and joy. White roses are a touching remembrance of a mother who is no longer with us.</li>
+                                            <li class="text-sm lg:text-base text-body-text list-disc"><b class="font-bold">Why they're popular:</b> Roses are classic and universally loved. Their beauty and fragrance have made them a perennial favorite.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- accordion-tab -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+
+         <!-- Footer -->
+        <footer class="bg-[#477722] py-[40px] sm:py-[60px]">
+            <div class="container-custom px-[59px] sm:p-0">
+                <div class="flex justify-between flex-wrap">
+                    <div class="w-full lg:w-fit lg:mr-4">
+                        <img src="images/footer-logo.svg" alt="" class="max-w-[200px] md:max-w-[150px] lg:max-w-[150px] xl:max-w-full mb-[30px] md:mb-12">
+                        <ul class="flex items-center mb-[30px] md:mb-0 flex-wrap md:max-w-[190px] lg:max-w-full">
+                            <li class="text-xs text-white mr-2 lg:w-full lg:mb-2 xl:w-fit xl:mb-0">Connect with us on Social Media</li>
+                            <li><a href="#" class="text-base text-white mr-2 hover:text-petal"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="text-base text-white hover:text-petal"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-fit mb-[0] sm:mb-[30px] md:mb-[30px] lg:mb-[0]">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase lg:mb-4 md:text-xs xl:text-base">
+                            LOCATIONS
+                        </h3>
+                        <div class="flex gap-5 lg:gap-14">
+                            <div class="w-6/12">
+                                <ul class="space-y-1.5 md:space-y-2.5">
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Brantford</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Burlington</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Cambridge</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Grimsby</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Kitchener</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">London</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Mississauga</a></li>
+                                </ul>
+                            </div>
+                            <div class="w-6/12">
+                                <ul class="space-y-1.5 md:space-y-2.5">
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Oakville</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Peterborough</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Sarnia</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">St Thomas</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Stratford</a></li>
+                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Strathroy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-fit my-[30px] sm:my-0">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            ABOUT
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">About Forest of Flowers</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Franchise Opportunities</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Blog</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">FAQ</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Contact Us</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Careers</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-fit">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            MORE INFO
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Refund Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Fee Chart</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-fit">
+                        <h3 class="text-sm mb-3 text-white font-semibold uppercase md:mb-4 md:text-xs xl:text-base">
+                            MY ACCOUNT
+                        </h3>
+                        <ul class="space-y-1.5 md:space-y-2.5">
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Log In</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Wishlist</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">My Orders</a></li>
+                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Subscriptions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-8">
+                    <p class="text-[10px] text-white text-center">
+                        <span class="pr-1.5 md:mr-1.5 border-r border-white table mx-auto md:inline">© 2024 Forest of Flowers. All rights reserved.</span>
+                        Designed by REM Web Solutions. Developed by Kodetek.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
