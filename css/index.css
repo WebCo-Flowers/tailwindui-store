@@ -380,11 +380,21 @@ header.sticky .navbar-nav {
 }
 
 /* **** End Slider Arrow **** */
+.select-step label {
+  border: 1px solid transparent;
+  display: block;
+}
+.select-step input:checked + label {
+  border-color: var(--foliage);
+  color: var(--darker-foliage);
+}
+
 .select-size label {
   border: 1px solid transparent;
   display: block;
 }
 .select-size input:checked + label {
+  color: var(--darker-foliage);
   border-color: var(--foliage);
 }
 

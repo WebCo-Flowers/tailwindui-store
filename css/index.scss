@@ -339,21 +339,38 @@ header.sticky{
 /* **** End Slider Arrow **** */
 
 
+.select-step{
+     label {
+        border: 1px solid transparent;
+        display: block;
+    }
+    input:checked + label {
+        border-color: var(--foliage);
+        // font-weight: bold;
+        color: var(--darker-foliage);
+    }
+}
 .select-size {
     label {
         border: 1px solid transparent;
         display: block;
     }
     input:checked + label {
+        color: var(--darker-foliage);
         border-color: var(--foliage);
     }
 }
+
+
 #tab-contents{
      input:checked + label {
         color: var(--darker-foliage);
         border-color: var(--darker-foliage);
     }
 }
+
+
+
 
 .points-box{
     @media (min-width: 1280px) and (max-width: 1399.98px) {
