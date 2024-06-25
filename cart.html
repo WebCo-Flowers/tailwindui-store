@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
+
         <!-- Header -->
         <header class="relative z-50 md:pb-1 border-b-2 border-divider-outline custom-button">
             <div class="bg-darker-foliage py-3.5 text-center">
@@ -255,52 +256,74 @@
         <!-- End Header -->
 
         <!-- Cart -->
-        <div class="relative py-[60px]">
+        <div class="relative py-10 sm:py-[60px]">
+            <div class="container-custom max-w-[906px]">
+                <h2 class="text-vine-lighter font-semibold lg:mb-[30px] sm:mb-6 mb-5 text-center text-[22px] md:text-2xl lg:text-[30px] xl:text-4xl">Shopping  Cart</h2>
+                <table class="table-auto border-t border-divider-outline mb-5 w-full">
+                    <tbody>
+                        <tr>
+                            <td class="py-5 sm:py-7 md:py-9 border-b border-divider-outline align-top w-3/5">
+                                <div class="flex lg:gap-6 md:gap-4 sm:gap-3 gap-2.5">
+                                    <div class="box-img size-[50px] sm:size-20 md:size-24 lg:size-32 sm:min-w-min min-w-[50px] border border-divider-outline">
+                                        <img src="images/standard-project1.jpg" alt="" class="w-full">
+                                    </div>
+                                    <div class="decoration flex justify-between flex-col gap-2">
+                                        <h4 class="sm:text-sm text-xs text-body-text font-bold">Florist's Choice Daily Deal <span class="block text-light-body-text font-normal mt-1">Standard</span></h4>
+                                        <h6 class="sm:text-sm text-xs text-body-text"> <span class="text-foliage mr-1"><i class="far fa-check"></i></span> In stock </h6>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="py-5 sm:py-7 md:py-9 px-1 border-b border-divider-outline align-top w-1/5">
+                                <div class="relative">
+                                    <select class="sm:w-16 w-14 border border-divider-outline sm:text-sm text-xs text-body-text sm:py-2.5 py-1.5 sm:px-3 px-2 table md:mb-4 sm:mb-3 mb-2 outline-none">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                    <a href="#" class="sm:text-sm text-xs text-vine-lighter font-bold underline">Remove</a>
+                                </div>
+                            </td>
+                            <td class="py-5 sm:py-7 md:py-9 border-b border-divider-outline align-top w-1/5">
+                                <span class="block text-right sm:text-sm text-xs font-semibold">$49.99</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="max-w-[754px] ml-auto mb-[30px]">
+                    <div class="border border-divider-outline p-5 mb-5">
+                        <div class="flex items-start justify-between border-b border-divider-outline sm:pb-5 pb-3 sm:mb-5 mb-3 sm:gap-4 gap-3">
+                            <h4 class="text-sm text-light-body-text"><b class="font-semibold text-body-text block mb-1">Subtotal</b> Shipping and taxes will be calculated at checkout.</h4>
+                            <h6 class="block text-right text-sm font-semibold">$49.99</h6>
+                        </div>
+                        <div class="sm:flex gap-2 items-center">
+                            <h4 class="text-sm text-body-text mb-1 sm:mb-0"> Add Promo Code</h4>
+                            <input type="text" placeholder="Enter promo code here" class="w-full sm:w-40 mb-2 sm:mb-0 border border-divider-outline text-xs text-body-text py-2.5 px-3 table outline-none">
+                            <button type="submit" class="btn-primary border border-foliage py-2.5 px-5 text-xs">Apply</button>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-primary max-w-[754px] mx-auto w-full text-center block mb-7">Checkout</a>
+                    <h6 class="text-xs text-body-text flex items-center justify-center gap-1 mb-8">or <a href="#" class="text-sm text-vine-lighter font-bold gap-1 flex items-center"><span class="underline">Continue Shopping</span> <i class="far fa-arrow-right"></i></a></h6>
+                </div> 
+            </div>
             <div class="container-custom max-w-[914px]">
-                <h2 class="text-vine-lighter font-semibold mb-[30px] text-center text-2xl md:text-2xl lg:text-[30px] xl:text-4xl">Shopping  Cart</h2>
-                <div class="max-w-[906px] ml-auto">
-                    <table class="table-auto border-t border-divider-outline mb-5 w-full">
-                        <tbody>
-                            <tr>
-                                <td class="py-9 border-b border-divider-outline align-top  w-3/5">
-                                    <div class="flex gap-6">
-                                        <div class="box-img size-32 border border-divider-outline">
-                                            <img src="images/standard-project1.jpg" alt="" class="w-full">
-                                        </div>
-                                        <div class="decoration flex justify-between flex-col shrink">
-                                            <h4 class="text-sm text-body-text font-bold">Florist's Choice Daily Deal <span class="block text-light-body-text font-normal">Standard</span></h4>
-                                            <h6 class="text-sm text-body-text"> <span class="text-foliage mr-1"><i class="far fa-check"></i></span> In stock </h6>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="py-9 border-b border-divider-outline align-top  w-1/5">
-                                    <div class="relative">
-                                        <select class="w-16 border border-divider-outline text-sm text-body-text py-2.5 px-3 table mb-4 outline-none">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                        </select>
-                                        <a href="#" class="text-sm text-vine-lighter font-bold underline">Remove</a>
-                                    </div>
-                                </td>
-                                <td class="py-9 border-b border-divider-outline align-top  w-1/5">
-                                    <span class="block text-right text-sm font-semibold">$49.99</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>    
+                <div class="bg-light-foliage p-5 md:py-8 md:px-5 flex items-center justify-between flex-wrap lg:gap-0 sm:gap-5 gap-4">
+                    <div>
+                        <h2 class="text-xl md:text-2xl lg:text-[30px] font-semibold mb-1 text-vine-lighter"> Add a personal touch to your beautiful bouquet</h2>
+                        <h6 class="md:text-base text-sm text-body-text">Transform beautiful floral arrangements into an unforgettable gift!</h6>
+                    </div>
+                    <a href="#" class="btn-primary"><img src="images/fofc-white-icon.svg" alt="">View Our Add Ons</a>
                 </div>
             </div>
         </div>
         <!-- End Cart -->
-
 
         <!-- Footer -->
         <footer class="bg-[#477722] py-[40px] sm:py-[60px]">
@@ -308,10 +331,10 @@
                 <div class="flex justify-between flex-wrap">
                     <div class="w-full lg:w-fit lg:mr-4">
                         <img src="images/footer-logo.svg" alt="" class="max-w-[200px] md:max-w-[150px] lg:max-w-[150px] xl:max-w-full mb-[30px] md:mb-12">
-                        <ul class="flex items-center mb-[30px] md:mb-0 flex-wrap md:max-w-[190px] lg:max-w-full">
+                        <ul class="flex items-center mb-[30px] lg:mb-0 flex-wrap ">
                             <li class="text-xs text-white mr-2 lg:w-full lg:mb-2 xl:w-fit xl:mb-0">Connect with us on Social Media</li>
-                            <li><a href="#" class="text-base text-white mr-2 hover:text-petal"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#" class="text-base text-white hover:text-petal"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" class="text-base text-white mr-2 transition hover:text-petal"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="text-base text-white transition hover:text-petal"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                     <div class="w-full md:w-fit mb-[0] sm:mb-[30px] md:mb-[30px] lg:mb-[0]">
@@ -321,23 +344,23 @@
                         <div class="flex gap-5 lg:gap-14">
                             <div class="w-6/12">
                                 <ul class="space-y-1.5 md:space-y-2.5">
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Brantford</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Burlington</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Cambridge</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Grimsby</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Kitchener</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">London</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Mississauga</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Brantford</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Burlington</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Cambridge</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Grimsby</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Kitchener</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">London</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Mississauga</a></li>
                                 </ul>
                             </div>
                             <div class="w-6/12">
                                 <ul class="space-y-1.5 md:space-y-2.5">
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Oakville</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Peterborough</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Sarnia</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">St Thomas</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Stratford</a></li>
-                                    <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Strathroy</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Oakville</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Peterborough</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Sarnia</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">St Thomas</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Stratford</a></li>
+                                    <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Strathroy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -347,13 +370,13 @@
                             ABOUT
                         </h3>
                         <ul class="space-y-1.5 md:space-y-2.5">
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">About Forest of Flowers</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Franchise Opportunities</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Blog</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">FAQ</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Contact Us</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Careers</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Newsletter</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">About Forest of Flowers</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Franchise Opportunities</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Blog</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">FAQ</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Contact Us</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Careers</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Newsletter</a></li>
                         </ul>
                     </div>
                     <div class="w-fit">
@@ -361,11 +384,11 @@
                             MORE INFO
                         </h3>
                         <ul class="space-y-1.5 md:space-y-2.5">
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Refund Policy</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Policy</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Fee Chart</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Privacy Policy</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Terms of Service</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Refund Policy</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Policy</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Delivery Fee Chart</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Privacy Policy</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Terms of Service</a></li>
                         </ul>
                     </div>
                     <div class="w-fit">
@@ -373,10 +396,10 @@
                             MY ACCOUNT
                         </h3>
                         <ul class="space-y-1.5 md:space-y-2.5">
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Log In</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Wishlist</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">My Orders</a></li>
-                            <li><a href="#" class="text-white block text-sm md:text-xs xl:text-base hover:text-petal">Subscriptions</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Log In</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Wishlist</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">My Orders</a></li>
+                            <li><a href="#" class="text-white transition block text-sm md:text-xs xl:text-base hover:text-petal">Subscriptions</a></li>
                         </ul>
                     </div>
                 </div>
