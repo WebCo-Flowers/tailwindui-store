@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forest of Flowers</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+
+        <!-- Scripts -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./js/tailwind.config.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+
+        <div class="relative">
+            <div class="sticky top-0 bg-white z-20 border-b-2 divider-outline">
+                <div class="bg-darker-foliage py-3.5 text-center">
+                    <h3 class="text-base xl:text-[20px] text-white mb-0">SAME DAY DELIVERY ends in <span class="font-bold">21h 56m 58s</span></h3>
+                </div>
+                <div class="py-3 sm:py-6">
+                    <img src="images/logo-checkout.png" alt="" class="max-w-52 sm:max-w-60 lg:max-w-full mx-auto">
+                </div>
+                
+                <div class="container-custom">
+                    <ul class="steps max-sm:overflow-auto max-sm:whitespace-nowrap max-sm:justify-start py-[12px] md:py-[24px] flex items-center justify-center gap-[30px] sm:gap-[30px] md:gap-[40px] lg:gap-[84px]">
+                        <li><a href="#" class="steps-link current" data-navbar="step-1">Your Info</a></li>
+                        <li><a href="#" class="steps-link" data-navbar="step-2">Message</a></li>
+                        <li><a href="#" class="steps-link" data-navbar="step-3">Gift Options</a></li>
+                        <li><a href="#" class="steps-link" data-navbar="step-4">Recipient</a></li>
+                        <li><a href="#" class="steps-link" data-navbar="step-5">Review & Payment</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="jquery-steps">
+                
+                <!-- Your form fields for step 1 -->
+                <div class="step-block hidden" data-section="step-1">
+                    <div class="container-custom">
+                        <div class="lg:max-w-[450px] xl:max-w-[672px] py-10 sm:py-[60px]">
+                            <h2 class="text-2xl sm:text-[30px] font-semibold text-vine-lighter mb-6 sm:mb-14">Your Info</h2>
+                            <form id="steps1" action="#">
+                                <div class="form-group">
+                                    <label>Email Address <span>*</span> </label>
+                                    <input type="text" class="form-control" placeholder="john.smith@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number <span>*</span> </label>
+                                    <input type="text" class="form-control" placeholder="519-555-5555">
+                                    <small>Phone number is needed by the store to verify deliveries.</small>
+                                </div>
+                                <div class="flex items-center gap-2.5">
+                                    <button type="button" class="btn-primary py-4 px-8 next-step" data-current="step-1" data-next="step-2">Continue</button>
+                                    <a href="cart.html" class="text-xs font-bold underline text-vine-lighter">Return to Cart</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Your form fields for step 2 -->
+                <div class="step-block hidden" data-section="step-2">
+                    <form id="steps2">
+                        <div class="container-custom">
+                            <div class="lg:max-w-[450px] xl:max-w-[672px] py-10  sm:py-[60px]">
+                                <h2 class="text-[30px] font-semibold text-vine-lighter mb-[30px]">
+                                    Message
+                                </h2>
+                                <form id="steps1" action="#">
+
+                                    <div class="form-group mb-7">
+                                        <label>Occasion</label>
+                                        <select class="form-control">
+                                            <option>Just Because</option>
+                                            <option>Just Because</option>
+                                            <option>Just Because</option>
+                                            <option>Just Because</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-7">
+                                        <label>Message</label>
+                                        <textarea class="form-control" rows="10" placeholder="Happy REM!"></textarea>
+                                    </div>
+                                    <div class="flex items-center gap-2.5">
+                                        <button type="button" class="btn-primary py-4 px-8 next-step" data-current="step-2" data-next="step-3">Continue</button>
+                                        <a href="cart.html" class="text-xs font-bold underline text-vine-lighter">Return to Cart</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                 <!-- Your form fields for step 3 -->
+                <div class="step-block " data-section="step-3">
+                    <form id="steps3">
+                        <div class="container-custom">
+                            <div class="lg:max-w-[450px] xl:max-w-[672px] py-10  sm:py-[60px]">
+                                <h2 class="text-[30px] font-semibold text-vine-lighter mb-1.5">Add the final touch</h2>
+                                <p class="text-base mb-14  text-stone">Select the item(s) that you’d like to add.</p>
+                            </div>
+
+                            <div class="relative lg:max-w-[450px] xl:max-w-[672px]">
+                                <div class="mb-6">
+                                    <h2 class="text-2xl text-vine-lighter font-semibold mb-2">Stuffed Toys & Candy</h2>
+                                    <div class="flex -mx-1 flex-wrap">
+                                        <div class="w-1/3 px-1">
+                                            <div class="gift-box">
+                                                <div class="box-img">
+                                                    <img src="images/gift-img1.png"  alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h3>Teddy Bear</h3>
+                                                    <h4>$19.99</h4>
+                                                </div>
+                                                <div class="hover-box">
+                                                    <p>Add a comforting, heart-felt touch to your bouquet with this teddy bear!</p>
+                                                    <p>It's soft and cuddly, made with plush cotton and polyester fabrics, designed in the shape of a cute, brown bear. With a friendly and endearing appearance, it has a stitched nose, button eyes, and a charming smile. </p>
+                                                    <a href="#" class=""><i class="fas fa-plus-circle"></i> Add to Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-1/3 px-1">
+                                            <div class="gift-box">
+                                                <div class="box-img">
+                                                    <img src="images/gift-img2.png"  alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h3>Box Of Chocolates</h3>
+                                                    <h4>$17.99</h4>
+                                                </div>
+                                                <div class="hover-box">
+                                                    <p>Add a comforting, heart-felt touch to your bouquet with this teddy bear!</p>
+                                                    <p>It's soft and cuddly, made with plush cotton and polyester fabrics, designed in the shape of a cute, brown bear. With a friendly and endearing appearance, it has a stitched nose, button eyes, and a charming smile. </p>
+                                                    <a href="#" class=""><i class="fas fa-plus-circle"></i> Add to Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h2 class="text-2xl text-vine-lighter font-semibold mb-2">Cards</h2>
+                                    <div class="flex -mx-1 flex-wrap">
+                                        <div class="w-1/3 px-1">
+                                            <div class="gift-box">
+                                                <div class="box-img">
+                                                    <img src="images/gift-img3.png"  alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h3>Congratulations Card</h3>
+                                                    <h4>$4.75</h4>
+                                                </div>
+                                                <div class="hover-box">
+                                                    <p>Add a comforting, heart-felt touch to your bouquet with this teddy bear!</p>
+                                                    <p>It's soft and cuddly, made with plush cotton and polyester fabrics, designed in the shape of a cute, brown bear. With a friendly and endearing appearance, it has a stitched nose, button eyes, and a charming smile. </p>
+                                                    <a href="#" class=""><i class="fas fa-plus-circle"></i> Add to Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-1/3 px-1">
+                                            <div class="gift-box">
+                                                <div class="box-img">
+                                                    <img src="images/gift-img4.png"  alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h3>Female Birthday Card</h3>
+                                                    <h4>$4.75</h4>
+                                                </div>
+                                                <div class="hover-box">
+                                                    <p>Add a comforting, heart-felt touch to your bouquet with this teddy bear!</p>
+                                                    <p>It's soft and cuddly, made with plush cotton and polyester fabrics, designed in the shape of a cute, brown bear. With a friendly and endearing appearance, it has a stitched nose, button eyes, and a charming smile. </p>
+                                                    <a href="#" class=""><i class="fas fa-plus-circle"></i> Add to Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-1/3 px-1">
+                                            <div class="gift-box">
+                                                <div class="box-img">
+                                                    <img src="images/gift-img5.png"  alt="">
+                                                </div>
+                                                <div class="detail">
+                                                    <h3>It's A Boy Card</h3>
+                                                    <h4>$4.75</h4>
+                                                </div>
+                                                <div class="hover-box">
+                                                    <p>Add a comforting, heart-felt touch to your bouquet with this teddy bear!</p>
+                                                    <p>It's soft and cuddly, made with plush cotton and polyester fabrics, designed in the shape of a cute, brown bear. With a friendly and endearing appearance, it has a stitched nose, button eyes, and a charming smile. </p>
+                                                    <a href="#" class=""><i class="fas fa-plus-circle"></i> Add to Order</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-6">
+                                    <h2 class="text-2xl text-vine-lighter font-semibold mb-2">Balloons</h2>
+                                   
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <button type="button" class="btn-primary py-4 px-8 next-step" data-current="step-3" data-next="step-4">Continue</button>
+                                <a href="cart.html" class="text-xs font-bold underline text-vine-lighter">Return to Cart</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="bg-[#F0F0F0] py-5 px-0 sm:py-16 lg:px-[33px] lg:fixed lg:w-[480px] xl:w-[40%] bottom-0 right-0 md:h-[calc(100vh-218px)] lg:h-[calc(100vh-238px)]">
+                <div class="container-custom md:w-[auto]">
+                    <h2 class="text-2xl font-semibold text-vine-lighter mb-7">
+                        Order Summary
+                    </h2>
+                    <div class="flex justify-between border-b border-divider-outline mb-6 pb-6">
+                        <div class="flex gap-2 md:gap-4">
+                            <img src="images/standard-project1.jpg" alt="" class="size-20 md:size-24 object-cover border border-divider-outline">
+                            <div class="">
+                                <h4 class="text-base text-body-text font-bold">Florist's Choice Daily Deal</h4>
+                                <h5 class="text-sm text-light-body-text">Standard</h5>
+                                <h5 class="text-sm text-light-body-text">Quantity: 1</h5>
+                            </div>
+                        </div>
+                        <h6 class="text-base text-body-text">$49.99</h6>
+                    </div>
+                    <div class="relative mb-5">
+                        <ul>
+                            <li class="text-base text-light-body-text font-semibold flex justify-between pb-6 ">Subtotal<span class="text-body-text font-normal">$49.99</span></li>
+                            <li class="text-base text-light-body-text font-semibold flex justify-between pb-6 ">Delivery<span class="text-body-text font-normal">Calculated at next step</span></li>
+                            <li class="text-base text-light-body-text font-semibold flex justify-between pb-6 border-b border-divider-outline mb-6">HST 13.0%<span class="text-body-text font-normal">$6.50</span></li>
+                            <li class="text-base text-body-text font-semibold flex justify-between">Total<span class="font-semibold">$56.49</span></li>
+                        </ul>
+                    </div>
+                    <div class="sm:flex gap-2 items-center justify-end">
+                        <h4 class="text-sm text-body-text mb-1 sm:mb-0"> Add Promo Code</h4>
+                        <input type="text" placeholder="Enter promo code here" class="w-full sm:w-40 mb-2 sm:mb-0 border border-divider-outline text-xs text-body-text py-2.5 px-3 table outline-none">
+                        <button type="submit" class="btn-primary border border-foliage py-2.5 px-5 text-xs">Apply</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

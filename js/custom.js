@@ -182,6 +182,25 @@ $(document).ready(function () {
     });
     /* **** End Fix Header **** */
 
+
+    /* **** Wizard **** */
+    $(document).on('click', '.next-step', function () {
+        var dataNext = $(this).data('next');
+        step(`${dataNext}`);
+    });
+
+    function step(nextStep) {
+        $('.step-block').each(function () {
+            $(this).addClass('hidden');
+        });
+        $('.steps-link').each(function () {
+            $(this).removeClass('current');
+        });
+        $(`.step-block[data-section=${nextStep}]`).removeClass('hidden');
+        $(`.steps-link[data-navbar=${nextStep}]`).addClass('current');
+    }
+    /* **** Wizard **** */
+
     /* **** Tabs **** */
     let tabsContainer = document.querySelector("#tabs");
     let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
@@ -203,4 +222,7 @@ $(document).ready(function () {
         });
     });
     /* **** End Tabs **** */
+
+
+
 });
