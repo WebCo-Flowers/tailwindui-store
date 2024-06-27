@@ -184,63 +184,9 @@ header {
     @media (max-width: 640px) {
         min-height: unset;
         padding: 0;
-    }
-    .navbar-toggler {
-        background-color: transparent;
-        border-radius: 0;
-        outline: none;
-        box-shadow: none;
-        border: none;
-        padding: 0;
-        height: auto;
-        width: auto;
-        box-shadow: none;
-        outline: none;
-        .navbar-toggler-icon {
-            background-image: unset;
-            width: 32px;
-            height: 19px;
-            display: block;
-            background-image: none;
-            position: relative;
-            border-bottom: 3px solid #bebebe;
-            transition: all 300ms linear;
-            &:after,
-            &:before {
-                width: 32px;
-                position: absolute;
-                height: 3px;
-                background-color: #bebebe;
-                top: 0;
-                left: 0;
-                content: "";
-                z-index: 2;
-                transition: all 300ms linear;
-            }
-            &:after {
-                top: 8px;
-            }
-        }
-    }
-    .show {
-        .navbar-toggler-icon {
-            border-color: transparent;
-            &:after {
-                transform: rotate(45deg);
-            }
-            &:before {
-                transform: translateY(8px) rotate(-45deg);
-            }
-        }
-    }
-    .navbar-nav{
-        -webkit-transition: all 0.3s linear;
-        transition: all 0.3s linear;
-    }
-    .navbar-nav.show {
-        display: block !important;
-    }
+    }   
 }
+
 header.sticky{
     .navbar-nav{
         position: fixed;
@@ -251,6 +197,62 @@ header.sticky{
         border-bottom: 2px solid var(--divider-outline);
     }
 }
+.navbar-toggler {
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    outline: none;
+    .navbar-toggler-icon {
+        background-image: unset;
+        width: 32px;
+        height: 19px;
+        display: block;
+        background-image: none;
+        position: relative;
+        border-bottom: 3px solid #bebebe;
+        transition: all 300ms linear;
+        &:after,
+        &:before {
+            width: 32px;
+            position: absolute;
+            height: 3px;
+            background-color: #bebebe;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: 2;
+            transition: all 300ms linear;
+        }
+        &:after {
+            top: 8px;
+        }
+    }
+}
+.navbar-toggler.show {
+    .navbar-toggler-icon {
+        border-color: transparent;
+        &:after {
+            transform: rotate(45deg);
+        }
+        &:before {
+            transform: translateY(8px) rotate(-45deg);
+        }
+    }
+}
+.navbar-nav{
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.navbar-nav.show {
+    display: block !important;
+}
+
 /* **** toggler **** */
 
 /* **** Slider Arrow **** */
@@ -831,3 +833,30 @@ header.sticky{
     }
 }
 /* **** End gift-box **** */
+
+
+.accordion-content {
+    display: none;
+}
+.accordion-content.show {
+    display: block;
+}
+.accordion-header.show{
+    .fa-chevron-down{
+        &:before{
+            content: "\f077";
+        }
+    }
+}
+
+
+
+.top-head.top{
+    @media (max-width: 767px) {
+        position: fixed;
+        .logo-img{
+            display: none;
+        }
+    }
+    
+}

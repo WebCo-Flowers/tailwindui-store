@@ -227,7 +227,17 @@ header {
     padding: 0;
   }
 }
-header .navbar-toggler {
+
+header.sticky .navbar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  border-bottom: 2px solid var(--divider-outline);
+}
+
+.navbar-toggler {
   background-color: transparent;
   border-radius: 0;
   outline: none;
@@ -239,7 +249,7 @@ header .navbar-toggler {
   box-shadow: none;
   outline: none;
 }
-header .navbar-toggler .navbar-toggler-icon {
+.navbar-toggler .navbar-toggler-icon {
   background-image: unset;
   width: 32px;
   height: 19px;
@@ -249,7 +259,7 @@ header .navbar-toggler .navbar-toggler-icon {
   border-bottom: 3px solid #bebebe;
   transition: all 300ms linear;
 }
-header .navbar-toggler .navbar-toggler-icon:after, header .navbar-toggler .navbar-toggler-icon:before {
+.navbar-toggler .navbar-toggler-icon:after, .navbar-toggler .navbar-toggler-icon:before {
   width: 32px;
   position: absolute;
   height: 3px;
@@ -260,32 +270,26 @@ header .navbar-toggler .navbar-toggler-icon:after, header .navbar-toggler .navba
   z-index: 2;
   transition: all 300ms linear;
 }
-header .navbar-toggler .navbar-toggler-icon:after {
+.navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
 }
-header .show .navbar-toggler-icon {
+
+.navbar-toggler.show .navbar-toggler-icon {
   border-color: transparent;
 }
-header .show .navbar-toggler-icon:after {
+.navbar-toggler.show .navbar-toggler-icon:after {
   transform: rotate(45deg);
 }
-header .show .navbar-toggler-icon:before {
+.navbar-toggler.show .navbar-toggler-icon:before {
   transform: translateY(8px) rotate(-45deg);
 }
-header .navbar-nav {
+
+.navbar-nav {
   transition: all 0.3s linear;
 }
-header .navbar-nav.show {
-  display: block !important;
-}
 
-header.sticky .navbar-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: auto;
-  border-bottom: 2px solid var(--divider-outline);
+.navbar-nav.show {
+  display: block !important;
 }
 
 /* **** toggler **** */
@@ -931,4 +935,24 @@ header.sticky .navbar-nav {
   visibility: visible;
 }
 
-/* **** End gift-box **** *//*# sourceMappingURL=index.css.map */
+/* **** End gift-box **** */
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.show {
+  display: block;
+}
+
+.accordion-header.show .fa-chevron-down:before {
+  content: "\f077";
+}
+
+@media (max-width: 767px) {
+  .top-head.top {
+    position: fixed;
+  }
+  .top-head.top .logo-img {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

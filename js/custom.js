@@ -2,7 +2,7 @@ $(document).ready(function () {
     /* **** Add Remove Class **** */
     $(".navbar-toggler").click(function () {
         $(".navbar-toggler").toggleClass("show");
-        $("header .navbar-nav").toggleClass("show");
+        $(".navbar-nav").toggleClass("show");
         $("body").toggleClass("add-fix");
     });
     /* **** End Add Remove Class **** */
@@ -182,6 +182,16 @@ $(document).ready(function () {
     });
     /* **** End Fix Header **** */
 
+    /* **** Fix Header **** */
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 164) {
+            $(".top-head").addClass("top");
+        } else {
+            $(".top-head").removeClass("top");
+        }
+    });
+    /* **** End Fix Header **** */
+
 
     /* **** Wizard **** */
     $(document).on('click', '.next-step', function () {
@@ -200,6 +210,24 @@ $(document).ready(function () {
         $(`.steps-link[data-navbar=${nextStep}]`).addClass('current');
     }
     /* **** Wizard **** */
+
+
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.classList.toggle('show');
+        });
+    });
+
+    /* **** Add Remove Class **** * /
+    
+    /* **** End Add Remove Class **** */
+    $(".accordion-header").click(function () {
+        $(this).toggleClass("show");
+    });
+
+
+
 
     /* **** Tabs **** */
     let tabsContainer = document.querySelector("#tabs");
