@@ -192,30 +192,28 @@ $(document).ready(function () {
     });
     /* **** End Fix Header **** */
 
-
     /* **** Wizard **** */
-    $(document).on('click', '.next-step', function () {
-        var dataNext = $(this).data('next');
+    $(document).on("click", ".next-step", function () {
+        var dataNext = $(this).data("next");
         step(`${dataNext}`);
     });
 
     function step(nextStep) {
-        $('.step-block').each(function () {
-            $(this).addClass('hidden');
+        $(".step-block").each(function () {
+            $(this).addClass("hidden");
         });
-        $('.steps-link').each(function () {
-            $(this).removeClass('current');
+        $(".steps-link").each(function () {
+            $(this).removeClass("current");
         });
-        $(`.step-block[data-section=${nextStep}]`).removeClass('hidden');
-        $(`.steps-link[data-navbar=${nextStep}]`).addClass('current');
+        $(`.step-block[data-section=${nextStep}]`).removeClass("hidden");
+        $(`.steps-link[data-navbar=${nextStep}]`).addClass("current");
     }
     /* **** Wizard **** */
 
-
-    document.querySelectorAll('.accordion-header').forEach(header => {
-        header.addEventListener('click', () => {
+    document.querySelectorAll(".accordion-header").forEach((header) => {
+        header.addEventListener("click", () => {
             const content = header.nextElementSibling;
-            content.classList.toggle('show');
+            content.classList.toggle("show");
         });
     });
 
@@ -225,9 +223,6 @@ $(document).ready(function () {
     $(".accordion-header").click(function () {
         $(this).toggleClass("show");
     });
-
-
-
 
     /* **** Tabs **** */
     let tabsContainer = document.querySelector("#tabs");
@@ -250,7 +245,4 @@ $(document).ready(function () {
         });
     });
     /* **** End Tabs **** */
-
-
-
 });
