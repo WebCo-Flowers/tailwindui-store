@@ -56,7 +56,7 @@
                                 <span class="hidden lg:block">Wishlist</span>
                             </a>
                             <div class="relative group block z-30">
-                                <a href="javascript:void(0;)" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
+                                <a href="javascript:void(0);" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
                                     <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
                                         <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
                                     </span>
@@ -79,10 +79,10 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <a href="#" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
+                                    <a href="checkout.html" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
                                         Checkout
                                     </a>
-                                    <a href="#" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
+                                    <a href="cart.html" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
                                         View Shopping Cart
                                     </a>
                                 </div>
@@ -99,24 +99,58 @@
                 <p class="text-xs text-body-text ml-auto table lg:hidden my-5">
                     <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store: <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal">Kitchener</a>
                 </p>
-                <ul class="block items-center justify-center xl:gap-[39px] lg:flex lg:gap-5">
+                <ul class="nav block items-center justify-center xl:gap-[39px] lg:flex lg:gap-5">
                     <li class="relative border-b border-divider-outline lg:border-none">
                         <a href="#" class="text-body-text text-base flex items-center gap-1 py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Deal of the Day</a>
                     </li>
                     <li class="relative border-b border-divider-outline lg:border-none">
                         <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Autumn</a>
                     </li>
-                    <li class="relative group block border-b border-divider-outline lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
+
+                    <!-- Working -->
+                    <li class="relative group dropdown-btn block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0);" class="pointer-events-none text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
                             Occasions <i class="far fa-angle-down text-foliage"></i>
                         </a>
-                        <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
-                            <div class="flex -mx-4 flex-wrap flex-col-reverse sm:flex-row">
-                                <div class="w-full lg:w-[52%] px-4">
+                        <div class="relative dropdown lg:absolute top-full w-auto bg-white left-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden sm:group-hover:block">
+                            <div class="flex gap-11">
+                                <div class="flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
+                                     <ul class="flex-1 space-y-2.5 whitespace-nowrap">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
+                                            <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thinking of You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Love & Romance</a></li>
+                                        </ul>
+                                        <ul class="flex-1 space-y-2.5 whitespace-nowrap">
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Get Well</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Thank You</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">New Baby</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Congratulations</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">I'm Sorry</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Business Gifting</a></li>
+                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
+                                        </ul>
+                                </div>
+                                <div class="flex-1">
+                                     <div class="relative w-[300px] h-full">
+                                        <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
+                                        <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
+                                            <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
+                                            <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- <div class="flex-1 px-4">
                                     <div class="flex item-start pt-7 pb-6 px-7">
                                         <ul class="space-y-2.5 w-[57%]">
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
@@ -134,7 +168,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="w-full lg:w-[48%] px-4">
+                                <div class="flex-1 px-4">
                                     <div class="relative lg:table w-full ml-auto">
                                         <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
                                         <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
@@ -142,12 +176,15 @@
                                             <h3 class="text-petal text-xxl capitalize font-semibold">Birthday Collection</h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </li>
+                    <!-- End Working -->
+
+
                     <li class="relative group block border-b border-divider-outline lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
+                        <a href="javascript:void(0);" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
                             Flowers & Prants <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative lg:absolute top-full bg-white left-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
@@ -156,7 +193,7 @@
                                     <div class="flex item-start justify-between pt-7 pb-6 px-8">
                                         <ul class="space-y-2.5">
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
@@ -187,7 +224,7 @@
                         </div>
                     </li>
                     <li class="relative group block border-b border-divider-outline lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
+                        <a href="javascript:void(0);" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
                             Weddings & Events <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative lg:absolute top-full bg-white right-0 w-full lg:min-w-[661px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
@@ -196,7 +233,7 @@
                                     <div class="flex item-start justify-between pt-7 pb-6 px-8">
                                         <ul class="space-y-2.5">
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
-                                            <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
+                                            <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Sympathy & Funeral</a></li>
                                             <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Anniversary</a></li>
@@ -233,7 +270,7 @@
                         <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Subscription</a>
                     </li>
                     <li class="relative group block border-b border-divider-outline lg:border-none">
-                        <a href="javascript:void(0;)" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
+                        <a href="javascript:void(0);" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
                             Locations <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative lg:absolute top-full bg-white right-0 w-full p-4 lg:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
@@ -249,7 +286,7 @@
                         </div>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block lg:border-none">
-                        <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
+                        <a href="javascript:void(0);" class="search-icon text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
                     </li>
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 block lg:hidden lg:border-none">
                         <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">About</a>
@@ -261,6 +298,10 @@
                         <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage">Contact Us</a>
                     </li>
                 </ul>
+            </div>
+            <div class="search-box absolute left-0 right-0 bg-white w-full bottom-[-62px] hidden">
+                <input type="text" class="text-xl text-[#A7ACB8] uppercase px-6 py-4 outline-none w-full" placeholder="Search">
+                <a href="#" class="search-icon text-[#A7ACB8] text-2xl absolute top-2/4 -translate-y-2/4 right-4"><i class="far fa-search"></i></a>
             </div>
         </header>
         <!-- End Header -->
@@ -711,5 +752,6 @@
         <script src="js/jquery.js"></script>
         <script src="js/slick.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/navbar.js"></script>
     </body>
 </html>

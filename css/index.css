@@ -987,4 +987,8 @@ header.sticky .navbar-nav {
   border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+.search-box.show {
+  display: block !important;
 }/*# sourceMappingURL=index.css.map */

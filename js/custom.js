@@ -224,6 +224,10 @@ $(document).ready(function () {
         $(this).toggleClass("show");
     });
 
+    $(".search-icon").click(function () {
+        $("header .search-box").toggleClass("show");
+    });
+
     /* **** Tabs **** */
     let tabsContainer = document.querySelector("#tabs");
     let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
@@ -245,4 +249,21 @@ $(document).ready(function () {
         });
     });
     /* **** End Tabs **** */
+
+
+    var box = $('header .group');
+    var clicked = false;
+
+    // Click event handler
+    box.click(function () {
+        if (!clicked) {
+            // Add class to remove hover effect
+            box.addClass('no-hover');
+            clicked = true;
+        } else {
+            // Remove class to restore hover effect
+            box.removeClass('no-hover');
+            clicked = false;
+        }
+    });
 });
