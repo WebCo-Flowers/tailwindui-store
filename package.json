@@ -1,0 +1,16 @@
+{
+  "name": "tailwindui-store",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:tailwind": "npx tailwindcss -i ./css/index.css -o ./css/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6"
+  }
+}

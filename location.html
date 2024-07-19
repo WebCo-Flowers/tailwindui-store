@@ -16,9 +16,9 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <!-- Header -->
+         <!-- Header -->
         <header class="relative z-50 md:pb-1 border-b-2 border-divider-outline custom-button">
-            <div class="bg-darker-foliage py-3.5 text-center">
+            <div class="bg-darker-foliage py-4 text-center relative z-50 block">
                 <h3 class="text-base xl:text-[20px] text-white">SAME DAY DELIVERY ends in <span class="font-bold">21h 56m 58s</span></h3>
             </div>
             <div class="bg-light-foliage py-2 hidden lg:block">
@@ -28,70 +28,72 @@
                     <li><a href="#" class="text-xs block text-body-text hover:text-petal">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="container-custom py-4 bg-white relative z-50">
-                <div class="flex items-center">
-                    <div class="w-2/6">
-                        <button class="navbar-toggler table lg:hidden" type="button">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <p class="text-xs text-body-text hidden lg:block">
-                            <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store:
-                            <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal hover:no-underline">Kitchener</a>
-                        </p>
-                    </div>
-                    <div class="w-2/6">
-                        <a href="#" class="table mx-auto">
-                            <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto lg:table">
-                            <img src="images/mobile-logo.svg" alt="" class="max-w-full table lg:hidden">
-                        </a>
-                    </div>
-                    <div class="w-2/6">
-                        <div class="flex items-center justify-end gap-[15px] lg:gap-[20px] xl:gap-[31px]">
-                            <a href="#" class="group text-xs flex gap-2 items-center text-body-text hover:text-foliage">
-                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-user"></i></span>
-                                <span class="hidden lg:block">Log in to My Account</span>
+            <div class="bg-white relative z-50">
+                <div class="container-custom">
+                    <div class="flex items-center py-4">
+                        <div class="w-2/6">
+                            <button class="navbar-toggler table lg:hidden" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <p class="text-xs text-body-text hidden lg:block">
+                                <span class="text-foliage mr-1 text-base"><i class="fas fa-map-marker-alt"></i></span> Your nearest store:
+                                <a href="#" class="text-vine-lighter font-semibold underline hover:text-petal hover:no-underline">Kitchener</a>
+                            </p>
+                        </div>
+                        <div class="w-2/6">
+                            <a href="#" class="table mx-auto">
+                                <img src="images/logo.svg" alt="" class="max-w-full hidden mx-auto lg:table">
+                                <img src="images/mobile-logo.svg" alt="" class="max-w-full table lg:hidden">
                             </a>
-                            <a href="#" class="text-xs gap-2 items-center text-body-text group hover:text-foliage hidden lg:flex">
-                                <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-heart"></i></span>
-                                <span class="hidden lg:block">Wishlist</span>
-                            </a>
-                            <div class="relative group block z-30">
-                                <a href="javascript:void(0);" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
-                                    <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
-                                        <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
-                                    </span>
-                                    <span class="hidden lg:block">Cart</span>
+                        </div>
+                        <div class="w-2/6">
+                            <div class="flex items-center justify-end gap-[15px] lg:gap-[20px] xl:gap-[31px]">
+                                <a href="#" class="group text-xs flex gap-2 items-center text-body-text hover:text-foliage">
+                                    <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-user"></i></span>
+                                    <span class="hidden lg:block">Log in to My Account</span>
                                 </a>
+                                <a href="#" class="text-xs gap-2 items-center text-body-text group hover:text-foliage hidden lg:flex">
+                                    <span class="relative text-lg text-[#999999] group-hover:text-foliage"><i class="fas fa-heart"></i></span>
+                                    <span class="hidden lg:block">Wishlist</span>
+                                </a>
+                                <div class="relative group block z-30">
+                                    <a href="javascript:void(0);" class="text-xs flex gap-2 items-center text-body-text group hover:text-foliage">
+                                        <span class="text-lg text-[#999999] relative block group-hover:text-foliage">
+                                            <i class="fas fa-shopping-bag"></i> <b class="h-[13px] w-[13px] bg-foliage rounded-full flex items-center justify-center text-[8px] text-white absolute top-0 -right-[6px]">1</b>
+                                        </span>
+                                        <span class="hidden lg:block">Cart</span>
+                                    </a>
 
-                                <div class="absolute top-full bg-white right-0 w-full p-4 min-w-[323px] border border-divider-outline hidden group-hover:block">
-                                    <ul class="space-y-2.5 mb-6">
-                                        <li>
-                                            <a href="#" class="flex items-center gap-3">
-                                                <div class="h-[70px] w-[70px] border border-divider-outline">
-                                                    <img src="images/daily-deal-standard1.png" alt="" class="h-full w-full object-contain object-center">
-                                                </div>
-                                                <h4 class="text-xs text-body-text font-semibold">
-                                                    Florist's Choice Daily Deal
-                                                    <span class="font-normal block">
-                                                        Standard
-                                                    </span>
-                                                </h4>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="checkout.html" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
-                                        Checkout
-                                    </a>
-                                    <a href="cart.html" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
-                                        View Shopping Cart
-                                    </a>
+                                    <div class="absolute top-full bg-white right-0 w-full p-4 min-w-[323px] border border-divider-outline hidden group-hover:block">
+                                        <ul class="space-y-2.5 mb-6">
+                                            <li>
+                                                <a href="#" class="flex items-center gap-3">
+                                                    <div class="h-[70px] w-[70px] border border-divider-outline">
+                                                        <img src="images/daily-deal-standard1.png" alt="" class="h-full w-full object-contain object-center">
+                                                    </div>
+                                                    <h4 class="text-xs text-body-text font-semibold">
+                                                        Florist's Choice Daily Deal
+                                                        <span class="font-normal block">
+                                                            Standard
+                                                        </span>
+                                                    </h4>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="checkout.html" class="block w-full text-center bg-foliage text-white py-3 px-4 hover:bg-vine-lighter mb-7">
+                                            Checkout
+                                        </a>
+                                        <a href="cart.html" class="table mx-auto text-vine-lighter underline font-bold text-xs hover:no-underline">
+                                            View Shopping Cart
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white py-5 px-4 pb-0 w-full h-[calc(100vh-123px)] overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto">
+            <div class="navbar-nav fixed bottom-0 left-0 right-0 bg-white px-4 pt-40 w-full h-full overflow-auto hidden lg:overflow-visible lg:block lg:relative lg:pt-2 lg:h-auto">
                 <div class="block lg:hidden relative">
                     <input type="text" placeholder="Find a Gift" class="border border-divider-outline w-full py-4 pl-2.5 pr-10 outline-none shadow-none text-xs text-light-body-text">
                     <a href="#" class="text-body-text text-base absolute right-4 top-2/4 -translate-y-1/2"><i class="far fa-search"></i></a>
@@ -112,8 +114,8 @@
                             Occasions <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative dropdown lg:absolute top-full w-auto bg-white left-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden sm:group-hover:block">
-                            <div class="flex gap-11">
-                                <div class="flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
+                            <div class="flex sm:gap-11 max-sm:flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="sm:flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
                                     <ul class="flex-1 space-y-2.5 whitespace-nowrap">
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
                                         <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
@@ -133,8 +135,8 @@
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
                                     </ul>
                                 </div>
-                                <div class="flex-1">
-                                     <div class="relative w-[300px] h-full">
+                                <div class="max-sm:w-full sm:flex-1">
+                                     <div class="relative w-full lg:w-[300px] h-full">
                                         <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
                                         <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
                                             <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
@@ -153,8 +155,8 @@
                             Flowers & Prants <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative dropdown lg:absolute top-full w-auto bg-white left-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden sm:group-hover:block">
-                            <div class="flex gap-11">
-                                <div class="flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
+                            <div class="flex sm:gap-11 max-sm:flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="sm:flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
                                     <ul class="flex-1 space-y-2.5 whitespace-nowrap">
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
                                         <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
@@ -174,8 +176,8 @@
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
                                     </ul>
                                 </div>
-                                <div class="flex-1">
-                                     <div class="relative w-[300px] h-full">
+                                <div class="max-sm:w-full sm:flex-1">
+                                     <div class="relative w-full lg:w-[300px] h-full">
                                         <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
                                         <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
                                             <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
@@ -186,8 +188,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- End Working -->
-                     
+                    <!-- End Working -->                     
                     
                     <!-- Working -->
                     <li class="relative group dropdown-btn block border-b border-divider-outline lg:border-none">
@@ -195,8 +196,8 @@
                             Weddings & Events <i class="far fa-angle-down text-foliage"></i>
                         </a>
                         <div class="relative dropdown lg:absolute top-full w-auto bg-white left-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden sm:group-hover:block">
-                            <div class="flex gap-11">
-                                <div class="flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
+                            <div class="flex sm:gap-11 max-sm:flex-wrap flex-col-reverse sm:flex-row">
+                                <div class="sm:flex-1 flex gap-11 pl-[30px] pt-7 pb-6"> <!-- pl-[30px] pt-7 pb-6 -->
                                     <ul class="flex-1 space-y-2.5 whitespace-nowrap">
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
                                         <li><a href="mothers-day.html" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
@@ -216,8 +217,8 @@
                                         <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Retirement</a></li>
                                     </ul>
                                 </div>
-                                <div class="flex-1">
-                                     <div class="relative w-[300px] h-full">
+                                <div class="max-sm:w-full sm:flex-1">
+                                     <div class="relative w-full lg:w-[300px] h-full">
                                         <img src="images/birthday-flowers.jpg" alt="" class="w-full h-full">
                                         <div class="absolute bottom-5 bg-white p-4 left-[34px] right-[34px] text-center">
                                             <h5 class="text-body-text text-[10px] mb-[6px] uppercase font-semibold">order from our</h5>
@@ -235,12 +236,13 @@
                     <li class="relative border-b border-divider-outline lg:border-none">
                         <a href="#" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">Subscription</a>
                     </li>
-                    <li class="relative group block border-b border-divider-outline lg:border-none">
-                        <a href="javascript:void(0);" class="text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
+                    <!-- Working -->
+                    <li class="relative group dropdown-btn block border-b border-divider-outline lg:border-none">
+                        <a href="javascript:void(0);" class="pointer-events-none text-body-text text-base flex items-center gap-1 hover:text-foliage py-4 lg:py-2 border-b-2 border-transparent hover:border-foliage transition ease-in-out">
                             Locations <i class="far fa-angle-down text-foliage"></i>
                         </a>
-                        <div class="relative lg:absolute top-full bg-white right-0 w-full p-4 lg:min-w-[180px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden group-hover:block">
-                            <ul class="space-y-2.5">
+                        <div class="relative dropdown lg:absolute top-full w-auto bg-white left-0 shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-0 border-t-2 border-foliage hidden sm:group-hover:block">
+                             <ul class="flex-1 space-y-2.5 whitespace-nowrap p-4">
                                 <li><a href="#" class="text-sm text-body-text block hover:text-foliage">All Occasions</a></li>
                                 <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Mother’s Day</a></li>
                                 <li><a href="#" class="text-sm text-body-text block hover:text-foliage">Birthday</a></li>
@@ -251,6 +253,7 @@
                             </ul>
                         </div>
                     </li>
+                    <!-- End Working --> 
                     <li class="relative border-b border-divider-outline py-4 lg:py-2 hidden lg:block lg:border-none">
                         <a href="javascript:void(0);" class="search-icon text-body-text text-base flex items-center gap-1 hover:text-foliage"><i class="far fa-search"></i></a>
                     </li>
@@ -270,26 +273,29 @@
                 <a href="#" class="search-icon text-[#A7ACB8] text-2xl absolute top-2/4 -translate-y-2/4 right-4"><i class="far fa-search"></i></a>
             </div>
         </header>
+        <div class="fixed right-4 bottom-4 bg-white rounded-full h-14 w-14 z-40 flex items-center justify-center lg:hidden">
+            <button class="navbar-toggler block lg:hidden" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <!-- End Header -->
 
         <!-- Location -->
-        <section class="py-20">
+        <section class="py-10 md:py-20">
             <div class="container-custom">
                 <div class="text-center mb-10">
-                    <h1 class="heading1 text-4xl font-semibold text-vine-lighter uppercase mb-4">Locations and Hours</h1>
+                    <h1 class="heading1 text-vine-lighter uppercase mb-4">Locations and Hours</h1>
                     <img src="images/about_splas.jpg" alt="" class="w-full mb-4">
-                    <h3 class="text-stone text-2xl mb-3 font-semibold">Forest of Flowers is a full service flower shop in Ontario that specializes in  <br>providing "field fresh quality for less".</h3>
-                    <p class="text-body-text text-base">If you're looking for local flower delivery in Ontario or need flowers sent across Canada and beyond, we invite you to place your order online, by phone,<br> or to stop in to the Forest of Flowers location nearest you.</p>
+                    <h3 class="text-stone text-lg md:text-xl lg:text-2xl mb-3 font-semibold">Forest of Flowers is a full service flower shop in Ontario that specializes in  <br class="hidden md:block">providing "field fresh quality for less".</h3>
+                    <p class="text-body-text text-base">If you're looking for local flower delivery in Ontario or need flowers sent across Canada and beyond, we invite you to place your order online, by phone, <br class="hidden lg:block"> or to stop in to the Forest of Flowers location nearest you.</p>
                 </div>
-
-
-                <div class="pb-14 mb-14 border-b border-divider-outline">
-                    <h3 class="heading3 text-[26px] text-vine-lighter mb-4 font-semibold">Brantford Locations</h3>
-                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Brantford Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap ">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">265 King George Road <br>Unit 112B <br>Brantford, ON, N3R 6Y1</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3">www.forestofflowersbrantford.com</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowersbrantford.com</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">+1 (519) 752-6200</li>
                                     <li class="text-sm font-medium text-body-text">Toll Free: +1 (866) 265-4879</li>
@@ -305,10 +311,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">320 Colborne St W<br>Unit 8A <br>Brantford, ON, N3T 5L1</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3">www.forestofflowerswestbrant.com</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowerswestbrant.com</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">+1 (519) 751-0522</li>
                                     <li class="text-sm font-medium text-body-text">Toll Free: +1 (844) 753-7425</li>
@@ -327,13 +333,13 @@
                     </div>
                 </div>
 
-                <div class="pb-14 mb-14 border-b border-divider-outline">
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
                     <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <h3 class="heading3 text-[26px] text-vine-lighter mb-4 font-semibold">Burlington Locations</h3>
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Burlington Locations</h3>
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">Appleby Mall <br>5010 Pinedale Ave <br>Burlington, ON, L7L 0G3</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3 line-clamp-1">www.forestofflowers.com/stores/burlington-ontario-appleby-mall</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/stores/burlington-ontario-appleby-mall</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">+1 (905) 631-6200</li>
                                     <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 631-6200</li>
@@ -352,13 +358,13 @@
                     </div>
                 </div>
 
-                <div class="pb-14 mb-14 border-b border-divider-outline">
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
                     <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <h3 class="heading3 text-[26px] text-vine-lighter mb-4 font-semibold">Cambridge Locations</h3>
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Cambridge Locations</h3>
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">Coming Soon <br>Cambridge, ON,</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3">www.forestofflowers.com/stores/cambridge-ontario</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/stores/cambridge-ontario</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">+1 (519) 742-7221</li>
                                 </ul>
@@ -376,13 +382,13 @@
                     </div>
                 </div>
 
-                <div class="pb-14 mb-14 border-b border-divider-outline">
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
                     <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <h3 class="heading3 text-[26px] text-vine-lighter mb-4 font-semibold">Grimsby Locations</h3>
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Grimsby Locations</h3>
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">402 Winston Rd <br> Grimsby, ON, L3M 0H2</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3">www.forestofflowers.com/locations/grimsby-ontario</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/locations/grimsby-ontario</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">905-945-2219</li>
                                     <li class="text-sm font-medium text-body-text">Toll Free: 1-800-461-7374</li>
@@ -401,14 +407,13 @@
                     </div>
                 </div>
 
-
-                <div class="pb-14 mb-14 border-b border-divider-outline">
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
                     <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
-                        <div class="w-full md:w-4/12 px-1.5 xl:px-4 mb-3 md:mb-0 space-y-3 md:space-y-[12px] xl:space-y-[30px]">
-                            <h3 class="heading3 text-[26px] text-vine-lighter mb-4 font-semibold">Kitchener Locations</h3>
-                            <div class="p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Kitchener Locations</h3>
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
                                 <h4 class="heading4 text-lg font-semibold text-stone mb-3">725 Ottawa St. South <br> Kitchener, ON, N2E 3H5</h4>
-                                <a href="#" class="text-base text-vine-lighter font-semibold underline table mb-3">www.forestofflowers.com/stores/kitchener-ontario-ottawa-st</a>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/stores/kitchener-ontario-ottawa-st</a>
                                 <ul class="cntinfo space-y-1 mb-4">
                                     <li class="text-sm font-medium text-body-text">+1 (519) 742-7221</li>
                                     <li class="text-sm font-medium text-body-text">Toll Free: +1 (888) 670-0025</li>
@@ -427,7 +432,361 @@
                     </div>
                 </div>
 
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">London Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">555 Wellington Road <br>Unit 4A <br>London, ON, N6C 4R3</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 680-2529</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 680-2529</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">551 Oxford Street West <br>London, <br>ON, N6H 0H9</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 474-9555</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (844) 474-9555</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">1061 Wonderland Road South <br>London, <br>ON, N6K 3X4</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 680-7380</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (844) 680-7380</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">109 Fanshawe Park Rd East <br>Unit E <br>London, ON, N5X 3W1</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 601-8555</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 601-8555</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">1920 Dundas Street East <br>Unit 106 <br>London, ON, N5V 3P1</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 451-5222</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 451-5222</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">760 Hyde Park Road <br>Unit 3A <br>London, ON, N6H 5W9</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 473-8940</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 473-8940</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">1295 Highbury Avenue <br>London, <br> ON, N5Y 1B6</h4>
+                                <ul class="cntinfo space-y-1 mb-4 min-h-11">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 457-4292</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">Sunningdale Village <br>609 Fanshawe Park Rd West <br>London, ON, N6G 5B3 </h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 471-5252</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 471-5252</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Mississauga Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">Erinwood Shopping Centre <br>2400 Dundas St. West <br>Unit #3 <br>Mississauga, ON, L5K 2R8</h4>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/stores/mississauga-ontario-erinwood-st</a>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (905) 916-2424</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 916-2424</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 03:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Oakville Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">Trafalgar Ridge Shopping Centre <br>2387 Trafalgar Rd <br>Oakville, ON, L6H 6K7 </h4>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowersoakville.com</a>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (905) 257-0777</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (855) 757-0777</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 03:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Peterborough Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">139 George Street N. <br>Unit 6 <br>Peterborough, ON, K9J 3G6</h4>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/stores/peterborough-on-george-st</a>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (705) 876-6666</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (833) 876-6662</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 03:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Sarnia Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">1345 Colborne Road <br>Sarnia, <br> ON, N7V 3L3</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 332-2221</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (800) 205-6007</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">St Catharines Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">387 Ontario St. <br>Unit 4 <br> St Catharines, ON, L2R 5L3</h4>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowers.com/locations/st-catherines-ontario</a>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">905-934-7134</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: 1-800-710-9054</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">St Thomas Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">991 Talbot St <br>St Thomas, <br> ON, N5P 1E9</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 207-7747</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (844) 645-7747</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-8 xl:pb-14 mb-8 xl:mb-14 border-b border-divider-outline">
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Stratford Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">48 Wellington St <br> Stratford, <br> ON, N5A 2L2</h4>
+                                <a href="#" class="text-base text-vine-lighter font-semibold underline block mb-3 break-words">www.forestofflowersstratford.com</a>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 273-7703</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (800) 560-3091</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 03:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="heading3 text-2xl md:text-[26px] text-vine-lighter mb-4 font-semibold">Strathroy Locations</h3>
+                    <div class="flex -mx-1.5 xl:-mx-4 flex-wrap">
+                        <div class="w-full md:w-6/12 lg:w-4/12 px-1.5 xl:px-4 mb-4 md:mb-8">
+                            <div class="p-4 md:p-7 bg-white shadow-[0px_0px_10px_0px_rgba(0,0,0,0.2)]">
+                                <h4 class="heading4 text-lg font-semibold text-stone mb-3">360 Caradoc St. South <br>Unit 2A <br>Strathroy, ON, N7G 2P6</h4>
+                                <ul class="cntinfo space-y-1 mb-4">
+                                    <li class="text-sm font-medium text-body-text">+1 (519) 246-1223</li>
+                                    <li class="text-sm font-medium text-body-text">Toll Free: +1 (844) 534-8011</li>
+                                </ul>
+                                <ul class="timeinfo space-y-1">
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Mon <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Tue <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Wed <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Thu <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Fri <span>09:00 AM - 06:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sat <span>09:00 AM - 05:00 PM</span></li>
+                                    <li class="text-xs font-medium text-body-text flex justify-between">Sun <span>11:00 AM - 04:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End Location -->
@@ -530,6 +889,7 @@
         <script src="js/jquery.js"></script>
         <script src="js/slick.js"></script>
         <script src="js/custom.js"></script>
+        <script src="js/navbar.js"></script>
         <script src="js/navbar.js"></script>
     </body>
 </html>
