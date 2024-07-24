@@ -299,111 +299,64 @@ header.sticky .navbar-nav {
 /* **** toggler **** */
 /* **** Slider Arrow **** */
 .hero-slider {
-  position: relative;
+  @apply relative;
 }
 .hero-slider .slick-prev,
 .hero-slider .slick-next {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  font-size: 35px;
-  color: #fff;
-  transform: translate(0, -50%);
-  z-index: 9;
+  @apply absolute top-2/4 -translate-y-2/4 left-5 text-4xl text-white z-10;
 }
 .hero-slider .slick-next {
-  left: auto;
-  right: 20px;
+  @apply left-auto right-5;
 }
 
 .fresh-slider {
-  position: relative;
+  @apply relative;
 }
 .fresh-slider .slick-slide {
   padding: 0 10px;
 }
 .fresh-slider .slick-prev,
 .fresh-slider .slick-next {
-  position: absolute;
-  top: 50%;
-  left: -15px;
-  font-size: 30px;
-  color: var(--foliage);
-  transform: translate(0, -50%);
-  z-index: 9;
-}
-@media (max-width: 640px) {
-  .fresh-slider .slick-prev,
-  .fresh-slider .slick-next {
-    left: 10px;
-  }
+  @apply absolute left-2.5 sm:left-4 top-2/4 -translate-y-2/4 text-3xl text-foliage z-10;
 }
 .fresh-slider .slick-next {
-  left: auto;
-  right: -15px;
-}
-@media (max-width: 640px) {
-  .fresh-slider .slick-next {
-    right: 10px;
-  }
+  @apply left-auto right-2.5 sm:right-4;
 }
 
 .products-slider {
-  position: relative;
+  @apply relative;
 }
 .products-slider .slick-slide {
-  padding: 0 10px;
+  @apply px-2.5;
 }
 .products-slider .slick-prev,
 .products-slider .slick-next {
-  position: absolute;
-  top: 50%;
-  left: -15px;
-  font-size: 30px;
-  color: var(--foliage);
-  transform: translate(0, -50%);
-  z-index: 9;
-}
-@media (max-width: 640px) {
-  .products-slider .slick-prev,
-  .products-slider .slick-next {
-    left: 10px;
-  }
+  @apply absolute left-2.5 sm:-left-4 top-2/4 -translate-y-2/4 text-3xl text-foliage z-10;
 }
 .products-slider .slick-next {
-  left: auto;
-  right: -15px;
-}
-@media (max-width: 640px) {
-  .products-slider .slick-next {
-    right: 10px;
-  }
+  @apply left-auto right-2.5 sm:-right-4;
 }
 
 .slider-nav .slider-box {
-  border: 1px solid transparent;
+  @apply border border-transparent;
 }
 .slider-nav .slick-current .slider-box {
-  border-color: var(--foliage);
+  @apply border-foliage;
 }
 
 /* **** End Slider Arrow **** */
 .select-step label {
-  border: 1px solid transparent;
-  display: block;
+  @apply border border-transparent block;
 }
 .select-step input:checked + label {
-  border-color: var(--foliage);
-  color: var(--darker-foliage);
+  @apply border-foliage text-darker-foliage;
 }
 
 .select-size label {
-  border: 1px solid transparent;
-  display: block;
+  @apply border border-transparent block;
 }
 .select-size input:checked + label {
-  color: var(--darker-foliage);
-  border-color: var(--foliage);
+  @apply border-foliage text-darker-foliage;
 }
 
 #tab-contents input:checked + label {
@@ -1035,4 +988,6 @@ header.sticky .navbar-nav {
 
 .cart-primary {
   @apply bg-foliage text-white text-base py-[17px] px-4 table min-w-[290px] text-center;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/* **** sympathy-funeral-mothers-day Page **** *//*# sourceMappingURL=index.css.map */

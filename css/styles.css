@@ -1874,6 +1874,10 @@ video {
   min-height: 2.75rem;
 }
 
+.min-h-\[290px\] {
+  min-height: 290px;
+}
+
 .min-h-\[62px\] {
   min-height: 62px;
 }
@@ -3264,16 +3268,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/images\/mothers-day-intro-bg\.jpg\'\)\] {
+  background-image: url('../images/mothers-day-intro-bg.jpg');
+}
+
 .bg-\[url\(\'\.\.\/images\/reward-bg1\.jpg\'\)\] {
   background-image: url('../images/reward-bg1.jpg');
 }
 
 .bg-\[url\(\'\.\.\/images\/reward-bg2\.jpg\'\)\] {
   background-image: url('../images/reward-bg2.jpg');
-}
-
-.bg-\[url\(\'images\/mothers-day-intro-bg\.jpg\'\)\] {
-  background-image: url('images/mothers-day-intro-bg.jpg');
 }
 
 .decoration-slice {
@@ -3738,10 +3742,6 @@ video {
   font-size: 10px;
 }
 
-.text-\[22px\] {
-  font-size: 22px;
-}
-
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -3777,10 +3777,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .font-bold {
@@ -4711,16 +4707,19 @@ header.sticky .navbar-nav {
 .hero-slider .slick-next {
   position: absolute;
   top: 50%;
-  left: 20px;
-  font-size: 35px;
-  color: #fff;
-  transform: translate(0, -50%);
-  z-index: 9;
+  left: 1.25rem;
+  z-index: 10;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hero-slider .slick-next {
   left: auto;
-  right: 20px;
+  right: 1.25rem;
 }
 
 .fresh-slider {
@@ -4734,29 +4733,31 @@ header.sticky .navbar-nav {
 .fresh-slider .slick-prev,
 .fresh-slider .slick-next {
   position: absolute;
+  left: 0.625rem;
   top: 50%;
-  left: -15px;
-  font-size: 30px;
+  z-index: 10;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   color: var(--foliage);
-  transform: translate(0, -50%);
-  z-index: 9;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .fresh-slider .slick-prev,
-  .fresh-slider .slick-next {
-    left: 10px;
+.fresh-slider .slick-next {
+    left: 1rem;
   }
 }
 
 .fresh-slider .slick-next {
   left: auto;
-  right: -15px;
+  right: 0.625rem;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .fresh-slider .slick-next {
-    right: 10px;
+    right: 1rem;
   }
 }
 
@@ -4765,40 +4766,44 @@ header.sticky .navbar-nav {
 }
 
 .products-slider .slick-slide {
-  padding: 0 10px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .products-slider .slick-prev,
 .products-slider .slick-next {
   position: absolute;
+  left: 0.625rem;
   top: 50%;
-  left: -15px;
-  font-size: 30px;
+  z-index: 10;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   color: var(--foliage);
-  transform: translate(0, -50%);
-  z-index: 9;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .products-slider .slick-prev,
-  .products-slider .slick-next {
-    left: 10px;
+.products-slider .slick-next {
+    left: -1rem;
   }
 }
 
 .products-slider .slick-next {
   left: auto;
-  right: -15px;
+  right: 0.625rem;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .products-slider .slick-next {
-    right: 10px;
+    right: -1rem;
   }
 }
 
 .slider-nav .slider-box {
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-color: transparent;
 }
 
 .slider-nav .slick-current .slider-box {
@@ -4808,8 +4813,9 @@ header.sticky .navbar-nav {
 /* **** End Slider Arrow **** */
 
 .select-step label {
-  border: 1px solid transparent;
   display: block;
+  border-width: 1px;
+  border-color: transparent;
 }
 
 .select-step input:checked + label {
@@ -4818,13 +4824,14 @@ header.sticky .navbar-nav {
 }
 
 .select-size label {
-  border: 1px solid transparent;
   display: block;
+  border-width: 1px;
+  border-color: transparent;
 }
 
 .select-size input:checked + label {
-  color: var(--darker-foliage);
   border-color: var(--foliage);
+  color: var(--darker-foliage);
 }
 
 #tab-contents input:checked + label {
@@ -5507,7 +5514,6 @@ header.sticky .navbar-nav {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
-  color: var(--vine-lighter);
 }
 
 @media (min-width: 640px) {
@@ -5535,7 +5541,6 @@ header.sticky .navbar-nav {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
-  color: var(--vine-lighter);
 }
 
 @media (min-width: 640px) {
@@ -5563,7 +5568,6 @@ header.sticky .navbar-nav {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  color: var(--vine-lighter);
 }
 
 @media (min-width: 640px) {
@@ -5590,7 +5594,6 @@ header.sticky .navbar-nav {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  color: var(--vine-lighter);
 }
 
 @media (min-width: 640px) {
@@ -5624,7 +5627,6 @@ header.sticky .navbar-nav {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  color: var(--vine-lighter);
   text-decoration-line: underline;
 }
 
@@ -5703,6 +5705,8 @@ header.sticky .navbar-nav {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+/* **** sympathy-funeral-mothers-day Page **** */
 
 .hover\:prose-lg:hover {
   font-size: 1.125rem;
@@ -7703,6 +7707,10 @@ header.sticky .navbar-nav {
     width: 25%;
   }
 
+  .sm\:w-4\/5 {
+    width: 80%;
+  }
+
   .sm\:w-40 {
     width: 10rem;
   }
@@ -7875,13 +7883,9 @@ header.sticky .navbar-nav {
     text-align: left;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .sm\:text-\[30px\] {
-    font-size: 30px;
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .sm\:text-\[40px\] {
@@ -7911,11 +7915,6 @@ header.sticky .navbar-nav {
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .sm\:underline {
@@ -8276,11 +8275,6 @@ header.sticky .navbar-nav {
     line-height: 2rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -8300,10 +8294,6 @@ header.sticky .navbar-nav {
 
   .md\:text-\[30px\] {
     font-size: 30px;
-  }
-
-  .md\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .md\:text-base {
@@ -8667,11 +8657,6 @@ header.sticky .navbar-nav {
     line-height: 2rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -8902,16 +8887,6 @@ header.sticky .navbar-nav {
 
   .xl\:pb-14 {
     padding-bottom: 3.5rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .xl\:text-\[20px\] {
