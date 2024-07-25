@@ -2069,6 +2069,10 @@ video {
   width: 100%;
 }
 
+.w-0\.5 {
+  width: 0.125rem;
+}
+
 .min-w-56 {
   min-width: 14rem;
 }
@@ -8757,6 +8761,14 @@ header.sticky .navbar-nav {
     width: 100%;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:min-w-\[180px\] {
     min-width: 180px;
   }
@@ -9048,6 +9060,10 @@ header.sticky .navbar-nav {
   .xl\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 
   .xl\:max-w-\[150px\] {
