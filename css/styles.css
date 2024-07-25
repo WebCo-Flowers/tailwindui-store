@@ -1801,10 +1801,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2069,10 +2065,6 @@ video {
   width: 100%;
 }
 
-.w-0\.5 {
-  width: 0.125rem;
-}
-
 .min-w-56 {
   min-width: 14rem;
 }
@@ -2107,6 +2099,10 @@ video {
 
 .max-w-\[1141px\] {
   max-width: 1141px;
+}
+
+.max-w-\[1170px\] {
+  max-width: 1170px;
 }
 
 .max-w-\[135px\] {
@@ -5201,6 +5197,11 @@ header.sticky .navbar-nav {
 /* **** End Buttons **** */
 
 /* **** Customer Review **** */
+
+.work-box {
+  background: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
 
 .customer-review {
   background: white;
@@ -8351,6 +8352,10 @@ header.sticky .navbar-nav {
     width: 42%;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .md\:w-\[58\%\] {
     width: 58%;
   }
@@ -8716,6 +8721,10 @@ header.sticky .navbar-nav {
     width: 25%;
   }
 
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
   .lg\:w-4\/12 {
     width: 33.333333%;
   }
@@ -8759,14 +8768,6 @@ header.sticky .navbar-nav {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
   }
 
   .lg\:min-w-\[180px\] {
@@ -9037,8 +9038,16 @@ header.sticky .navbar-nav {
     height: 370px;
   }
 
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
   .xl\:w-3\/5 {
     width: 60%;
+  }
+
+  .xl\:w-5\/6 {
+    width: 83.333333%;
   }
 
   .xl\:w-\[33\%\] {
@@ -9060,10 +9069,6 @@ header.sticky .navbar-nav {
   .xl\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
   }
 
   .xl\:max-w-\[150px\] {
