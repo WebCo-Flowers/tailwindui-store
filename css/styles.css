@@ -1797,6 +1797,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -3973,6 +3977,11 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -4055,6 +4064,10 @@ video {
 
 .line-through {
   text-decoration-line: line-through;
+}
+
+.\!no-underline {
+  text-decoration-line: none !important;
 }
 
 .no-underline {
@@ -7549,6 +7562,14 @@ header.sticky .navbar-nav {
   }
 }
 
+.marker\:text-black *::marker {
+  color: rgb(0 0 0 );
+}
+
+.marker\:text-black::marker {
+  color: rgb(0 0 0 );
+}
+
 .hover\:border-foliage:hover {
   border-color: var(--foliage);
 }
@@ -7642,7 +7663,24 @@ header.sticky .navbar-nav {
   line-height: 2.25rem;
 }
 
+.prose-h2\:mb-5 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 1.25rem;
+}
+
 .prose-h2\:text-2xl :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.prose-h2\:text-vine-lighter :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--vine-lighter);
+}
+
+.prose-h3\:mb-3 :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 0.75rem;
+}
+
+.prose-h3\:text-2xl :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -7652,9 +7690,25 @@ header.sticky .navbar-nav {
   line-height: 1.75rem;
 }
 
+.prose-h3\:font-semibold :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-weight: 600;
+}
+
+.prose-h3\:text-vine-lighter :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--vine-lighter);
+}
+
+.prose-h4\:mb-2 :is(:where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 0.5rem;
+}
+
 .prose-h4\:text-lg :is(:where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.prose-h5\:mb-3 :is(:where(h5):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 0.75rem;
 }
 
 .prose-h5\:text-sm :is(:where(h5):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -7662,9 +7716,26 @@ header.sticky .navbar-nav {
   line-height: 1.25rem;
 }
 
+.prose-h5\:text-body-text :is(:where(h5):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--body-text);
+}
+
 .prose-h6\:text-xl :is(:where(h6):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.prose-p\:mb-4 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-bottom: 1rem;
+}
+
+.prose-p\:text-sm :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.prose-p\:text-body-text :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--body-text);
 }
 
 .prose-p\:text-gray-700 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -7674,6 +7745,26 @@ header.sticky .navbar-nav {
 
 .prose-a\:font-bold :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   font-weight: 700;
+}
+
+.prose-a\:font-semibold :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-weight: 600;
+}
+
+.prose-a\:text-vine-lighter :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--vine-lighter);
+}
+
+.prose-a\:underline :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  text-decoration-line: underline;
+}
+
+.prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  text-decoration-line: none;
+}
+
+.hover\:prose-a\:no-underline :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
+  text-decoration-line: none;
 }
 
 .prose-blockquote\:italic :is(:where(blockquote):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -7709,9 +7800,39 @@ header.sticky .navbar-nav {
   padding-left: 2rem;
 }
 
+.prose-li\:relative :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  position: relative;
+}
+
 .prose-li\:my-4 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.prose-li\:flex :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  display: flex;
+}
+
+.prose-li\:justify-between :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  justify-content: space-between;
+}
+
+.prose-li\:pl-6 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  padding-left: 1.5rem;
+}
+
+.prose-li\:text-base :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.prose-li\:text-sm :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.prose-li\:text-body-text :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  color: var(--body-text);
 }
 
 .prose-table\:my-8 :is(:where(table):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -8226,6 +8347,11 @@ header.sticky .navbar-nav {
 
   .group:hover .sm\:group-hover\:block {
     display: block;
+  }
+
+  .prose-p\:sm\:text-sm :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -9013,6 +9139,16 @@ header.sticky .navbar-nav {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .prose-p\:lg\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .prose-li\:lg\:text-base :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -9233,6 +9369,20 @@ header.sticky .navbar-nav {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .prose-h3\:xl\:text-\[30px\] :is(:where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 30px;
+  }
+
+  .prose-h5\:xl\:text-base :is(:where(h5):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .prose-p\:xl\:text-base :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
